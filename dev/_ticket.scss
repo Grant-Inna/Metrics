@@ -21,7 +21,7 @@
   margin-right: 10px;
   width: 40px;
   height: 40px;
-  .main_avatar-image {
+  > img {
     width: 40px;
     height: 40px;
   }
@@ -87,7 +87,7 @@
 .ticket__replyHolder {
   @include rowFlex();
   justify-content: baseline;
-  align-items: baseline;
+  align-items: flex-start;
   margin: 15px auto;
   width: 100%;
   &:last-child {
@@ -95,6 +95,7 @@
   }
 }
 .ticket__replyAvatarWrapper {
+  margin-top: 10px;
   margin-right: 10px;
 }
 .ticket__replyTextWrapper {
