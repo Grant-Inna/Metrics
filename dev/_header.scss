@@ -1,0 +1,176 @@
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 60px;
+  background-color: $color_header;
+  @include rowFlex( $j-c: space-between );
+}
+.header__info {
+  height: 30px;
+  @include rowFlex();
+
+}
+.header__title {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 1px;
+  height: 30px;
+  font-family: 'Roboto regular', sans-serif;
+  font-variant: all-small-caps;
+  font-size: 2.3rem;
+  color: $color_prettyBlueHEX;
+  @include rowFlex( $j-c: center );
+  align-items: inherit;
+}
+
+
+.mainTitle {
+  width: 280px;
+  min-width: 280px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 1px;
+  height: 30px;
+  font-family: 'Roboto regular', sans-serif;
+  font-variant: all-small-caps;
+  font-size: 3rem;
+  color: $color_prettyBlueHEX;
+  @include rowFlex( $j-c: center );
+  align-items: inherit;
+}
+
+
+
+/*   RIGHT   */
+
+.header__self {
+  @include rowFlex( $j-c: space-between );
+}
+.header__self * {
+  @include transition();
+}
+.header__search,
+.header__out,
+.header__message > div {
+  @include iconsProp;
+  @include rowFlex( $j-c: center);
+}
+
+
+.header__message {
+  @include rowFlex( $j-c: space-around )
+}
+.icon-logout {
+  position: relative;
+}
+
+
+
+/*   USER   */
+
+.header__user {
+  @include rowFlex()
+}
+.header__name {
+  font-family: 'Roboto regular', sans-serif;
+  color: $color_prettyBlueHEX;
+  text-transform: capitalize;
+}
+.header__avatar {
+  @include iconsProp;
+  margin-left: 10px;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+/*      HOVER     */
+
+.header__search:hover {
+  background-color: #f8f8ff;
+  border: 1.5px solid $color_hoverBorder;
+  @include transition;
+  &:hover .icon-magnifier {
+    color: $color_hoverBorder;
+  }
+}
+
+.header__out:hover {
+  background-color: #f8f8ff;
+  border: 1.5px solid $color_hoverBorder;
+  @include transition;
+  &:hover .icon-logout {
+    color: $color_hoverBorder;
+  }
+}
+
+/*    Count Color   */
+
+[notice-count] {
+  background-color: $color_prettyCoralHEX;
+}
+[mail-count] {
+  background-color: $color_prettyBlueHEX;
+}
+[calendar-count] {
+  background-color: $color_prettyGreenHEX;
+}
+
+
+
+/*     SUPER–PUPER HOVER     */
+.hoverMainPanel,
+.front,
+.back {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.hoverMainPanel {
+  position: relative;
+  -webkit-transform: perspective(600px);
+  transform: perspective(600px);
+  -webkit-perspective: 600px;
+  perspective: 600px;
+}
+
+.hoverMainPanel:hover .front {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.hoverMainPanel:hover .back {
+  z-index: 1;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg)
+}
+
+.front,
+.back {
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.back {
+  z-index: 0;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.front {
+  z-index: 1;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  text-align: center;
+  transition: all 0.7s cubic-bezier(0.63, 0.63, 0.54, 1.62);
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+

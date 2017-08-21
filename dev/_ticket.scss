@@ -1,0 +1,248 @@
+.ticket__userMetaWrapper {
+  @include wrapperHeader;
+  @include rowFlex();
+  justify-content: flex-start;
+  margin-bottom: 0;
+  i {
+    color: inherit;
+  }
+}
+.ticket__userMeta {
+  @include rowFlex();
+  margin-right: 30px;
+  &-name {
+  color: #2e6da4;
+    font-weight: 600;
+  }
+}
+.main_avatar-ticketAvatar {
+  @extend .main_avatar;
+  margin: 0;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  .main_avatar-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+.ticket__meta-date {
+  @include rowFlex();
+  align-items: baseline;
+  color: #777;
+
+}
+.ticket__addedFiles {
+  @include rowFlex();
+  height: 32px;
+  padding: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  .badge {
+    margin-left: 7px;
+  }
+}
+
+.modal-title {
+  @include rowFlex();
+  justify-content: flex-start;
+  > i {
+    color: inherit;
+  }
+}
+
+/*                RECOURSE              */
+
+.ticket__recourseWrapper {
+  @include columnFlex();
+  padding: 20px 0 70px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.ticket__recourseTitleWrapper {
+  height: auto;
+  min-height: 50px;
+  @include rowFlex( $j-c: flex-start );
+}
+.ticket__recourseTitle {
+  font-weight: 600;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.ticket__recourseText {
+  font-weight: 400;
+  font-size: 97%;
+  color: #777;
+
+}
+
+
+/*             REPLY             */
+
+.ticket__replyWrapper {
+  @include columnFlex();
+  margin: 15px 0 0;
+}
+
+.ticket__replyHolder {
+  @include rowFlex();
+  justify-content: baseline;
+  align-items: baseline;
+  margin: 15px auto;
+  width: 100%;
+  &:last-child {
+    margin-bottom: 5px;
+  }
+}
+.ticket__replyAvatarWrapper {
+  margin-right: 10px;
+}
+.ticket__replyTextWrapper {
+  @include columnFlex();
+  align-items: baseline;
+}
+.ticket__replyTextTitle {
+  @include rowFlex();
+}
+.ticket__replyName {
+  margin-right: 20px;
+}
+
+.ticket__replyTextarea {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.ticket__replyText {
+  @extend .ticket__recourseText;
+  &-input {
+    @extend .ticket__recourseText;
+    max-width: 100% !important;
+    width: 100%;
+    margin: 0px -4px 0 0;
+    resize: vertical;
+    color: #484848 !important;
+  }
+}
+
+
+
+
+.ticket__formWrapper {
+  @include columnFlex();
+  margin: 25px 0 10px;
+}
+.ticket__formButtons {
+  @include rowFlex();
+  width: 100%;
+  justify-content: space-between;
+}
+.ticket__formOption {
+  @include rowFlex();
+  padding: 0 15px 0 3px;
+  .icon-star {
+    color: #777;
+  }
+}
+.ticket__formBtn {
+  @include rowFlex();
+  padding: 0 15px 0 3px;
+}
+
+
+.ticket__controlBtnContainer {
+  min-height: 240px;
+  width: 100%;
+}
+
+.mainContent__replyControlWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex !important;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.mainContent__replyControlWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent__replyControl {
+  width: 45%;
+  &-specialLabel {
+    width: 100%;
+    padding-left: 3px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  }
+  &-specialSpan {
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+      height: 30px;
+      width: $width__fileSelectInput;
+      text-align: start;
+  }
+}
+.mainContent__replyControl-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  > i {
+    color: #777;
+  }
+}
+.mainContent__replyControl-select {
+  margin-bottom: 2%;
+  border-radius: 3px;
+  &Files {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+}
+.mainContent__control-select {
+  font-family: 'Roboto regular', sans-serif;
+  font-variant: all-small-caps;
+  outline: none;
+  width: 100%;
+  border-radius: 3px;
+}
+.mainContent__replyControl-inputFiles {
+  position: absolute;
+  left: ($width__fileSelectInput / 2) - 15;
+  color: #eaeaea;
+  top: 6px;
+  border: none;
+  padding-left: 3px;
+  display: flex;
+  align-items: center;
+  outline: transparent none !important;
+  outline-offset: 0 !important;
+  :focus {
+    outline: transparent none !important;
+    outline-offset: 0 !important;
+  }
+  :active {
+    outline: transparent none !important;
+    outline-offset: 0 !important;
+  }
+}
+
+.mainContent__replySubmit {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.mainContent__addFiles {
+  width: 100%;
+}
