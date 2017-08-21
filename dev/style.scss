@@ -103,6 +103,22 @@ body, html {
   @include iconsProp;
 }
 
+.menu {
+  height: auto;
+  border-radius: 3px;
+  margin: 25px auto 10px;
+}
+.menuLink {
+  color: #23527c;
+  height: 30px;
+  width: 170px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  > i {
+    color: #23527c;
+  }
+}
 
 button {
   text-transform: uppercase;

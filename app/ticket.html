@@ -50,6 +50,12 @@
             <div class="header__out"><i class="icon-logout"></i></div>
         </div>
     </header>
+    <nav class="menu col-lg-10 col-md-11 col-sm-10 col-xs-12 ">
+        <a class="menuLink btn btn-sm btn-default" href="ticketList.html">
+            <i class="icon-home"></i>
+            К списку задач
+        </a>
+    </nav>
     <div class="container-fluid container-fluid-main">
         <div class="col-lg-10 col-md-11 col-sm-10 col-xs-12 mainWrapper-ticket">
             <div class="col-lg-7 col-md-9 col-sm-10 col-xs-12 mainWrapper-header">
@@ -206,9 +212,15 @@
                             <h4 class="ticket__replyName">Мистер Розовый</h4>
                             <div class="ticket__meta-date">15 Февраля</div>
                         </div>
-                        <div class="ticket__replyText">
-                            А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все.
-                            Мало, кто может это делать.
+                        <div class="ticket__replyTextWrapper">
+                            <div class="ticket__replyText">
+                                А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все.
+                                Мало, кто может это делать.
+                            </div>
+                            <div class="ticket__replyFiles">
+                                <div data-toggle="modal" data-target="#filesModal"  class="ticket__replyFiles-thumbnail"><a data-toggle="collapse" href="#file3">бла–бла.zip </a></div>
+                                <div data-toggle="modal" data-target="#filesModal"  class="ticket__replyFiles-thumbnail"><a data-toggle="collapse" href="#file1">песик.jpg </a></div>
+                            </div>
                         </div>
                     </div>
                 </div>

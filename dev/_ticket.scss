@@ -271,3 +271,12 @@
     color: #23527c;
   }
 }
+
+.ticket__replyFiles {
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  > img {
+    max-width: 50%;
+  }
+}

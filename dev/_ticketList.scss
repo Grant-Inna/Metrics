@@ -166,7 +166,7 @@
 }
 .oneTicket__data {
   width: 180px;
-  margin: 0 3%;
+  margin: 0 15px;
   @include rowFlex( $j-c: baseline );
   .icon-clock {
     color: $color_prettyBlueHEX - 20;
