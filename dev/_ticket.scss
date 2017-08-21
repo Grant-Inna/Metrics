@@ -34,10 +34,12 @@
 }
 .ticket__addedFiles {
   @include rowFlex();
+  justify-content: flex-start;
   height: 32px;
   padding: 0;
   padding-left: 12px;
   padding-right: 12px;
+  margin-top: 25px;
   .badge {
     margin-left: 7px;
   }
@@ -55,6 +57,7 @@
 
 .ticket__recourseWrapper {
   @include columnFlex();
+  justify-content: space-between;
   padding: 20px 0 70px;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
@@ -246,4 +249,25 @@
 
 .mainContent__addFiles {
   width: 100%;
+}
+
+.btn-link {
+  text-decoration: none !important;
+  outline: transparent none !important;
+  outline-offset: 0 !important;
+  :focus {
+    outline: transparent none !important;
+    outline-offset: 0 !important;
+  }
+  :active {
+    outline: transparent none !important;
+    outline-offset: 0 !important;
+  }
+  :hover {
+    outline: transparent none !important;
+    outline-offset: 0 !important;
+  }
+  > .icons {
+    color: #23527c;
+  }
 }
