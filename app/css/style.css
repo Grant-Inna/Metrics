@@ -238,11 +238,12 @@ body, html {
 
 .menu {
   height: auto;
-  border-radius: 3px;
-  margin: 25px auto 10px; }
+  border-radius: 3px; }
 
 .menuLink {
   color: #23527c;
+  font-weight: 600;
+  text-transform: uppercase;
   height: 30px;
   width: 170px;
   display: -webkit-box;
@@ -258,7 +259,9 @@ body, html {
       -ms-flex-align: center;
           align-items: center; }
   .menuLink > i {
-    color: #23527c; }
+    color: #23527c;
+    font-weight: 600;
+    font-size: 15px; }
 
 button {
   text-transform: uppercase;
@@ -449,9 +452,10 @@ button {
   height: 30px;
   border-radius: 25px;
   border: 1.5px solid transparent;
+  border: none;
   margin-left: 10px;
-  -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5); }
+  -webkit-box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.3); }
   .header__avatar > img {
     width: 30px;
     min-width: 30px;
@@ -1214,7 +1218,7 @@ sup {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
 
-.ticket__recourseText, .ticket__replyText, .ticket__replyText-input {
+.ticket__recourseText, .ticket__replyText, .ticket__replyText-text, .ticket__replyText-input {
   font-weight: 400;
   font-size: 97%;
   color: #777; }
@@ -1259,16 +1263,20 @@ sup {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 15px auto;
+  margin: 6px auto;
   width: 100%; }
   .ticket__replyHolder:last-child {
     margin-bottom: 5px; }
+  .ticket__replyHolder:nth-last-child(2) {
+    margin-bottom: 35px; }
+  .ticket__replyHolder:first-child {
+    margin-top: 15px; }
 
 .ticket__replyAvatarWrapper {
   margin-top: 10px;
   margin-right: 10px; }
 
-.ticket__replyTextWrapper {
+.ticket__replyTextWrapper, .ticket__replyFiles {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1334,7 +1342,7 @@ sup {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 25px 0 10px; }
+  margin: 15px 0 10px; }
 
 .ticket__formButtons {
   display: -webkit-box;
@@ -1519,6 +1527,14 @@ sup {
 .mainContent__addFiles {
   width: 100%; }
 
+.uploadedFiles__holder {
+  padding: 5px 0; }
+
+.uploadedFiles__oneFile {
+  color: #23527c;
+  font-weight: 600;
+  font-size: 13px; }
+
 .btn-link {
   text-decoration: none !important;
   outline: transparent none !important;
@@ -1536,11 +1552,35 @@ sup {
     color: #23527c; }
 
 .ticket__replyFiles {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: auto;
-  padding: 10px 20px; }
+  padding: 10px 20px 0; }
   .ticket__replyFiles > img {
     max-width: 50%; }
+
+.ticket__replyFiles-thumbnail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .ticket__replyFiles-thumbnail > i {
+    color: #23527c;
+    font-size: 16px; }
 
 .footer {
   width: 100%;

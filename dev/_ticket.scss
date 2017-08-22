@@ -91,10 +91,16 @@
   @include rowFlex();
   justify-content: baseline;
   align-items: flex-start;
-  margin: 15px auto;
+  margin: 6px auto;
   width: 100%;
   &:last-child {
     margin-bottom: 5px;
+  }
+  &:nth-last-child(2) {
+    margin-bottom: 35px;
+  }
+  &:first-child {
+    margin-top: 15px;
   }
 }
 .ticket__replyAvatarWrapper {
@@ -127,6 +133,9 @@
     resize: vertical;
     color: #484848 !important;
   }
+  &-text {
+    @extend .ticket__replyText;
+  }
 }
 
 
@@ -134,7 +143,7 @@
 
 .ticket__formWrapper {
   @include columnFlex();
-  margin: 25px 0 10px;
+  margin: 15px 0 10px;
 }
 .ticket__formButtons {
   @include rowFlex();
@@ -251,6 +260,15 @@
   width: 100%;
 }
 
+.uploadedFiles__holder {
+  padding: 5px 0;
+}
+.uploadedFiles__oneFile {
+  color: #23527c;
+  font-weight: 600;
+  font-size: 13px;
+}
+
 .btn-link {
   text-decoration: none !important;
   outline: transparent none !important;
@@ -273,10 +291,21 @@
 }
 
 .ticket__replyFiles {
+  @extend .ticket__replyTextWrapper;
+  justify-content: center;
   width: 100%;
   height: auto;
-  padding: 10px 20px;
+  padding: 10px 20px 0;
   > img {
     max-width: 50%;
+  }
+
+}
+.ticket__replyFiles-thumbnail {
+  @include rowFlex();
+  justify-content: flex-start;
+  > i {
+    color: #23527c;
+    font-size: 16px;
   }
 }
