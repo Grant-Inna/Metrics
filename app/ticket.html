@@ -19,16 +19,29 @@
 <body>
 <div class="row" id="container-main">
     <header class="header">
-        <div class="header__info col-sm-0 col-lg-2">
-            <h1 class="header__title">Метрика</h1>
-            <div class="header__menu">
-                <div class="header__menuWrapper"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></div>
+        <div class="header__info">
+            <div class="header__logo"></div>
+        </div>
+        <div class="header__nav col-xs-4 col-sm-3 col-md-2 col-lg-2">
+            <a href="allTickets.html" class="header__navTickets">Тикеты</a>
+            <a href="docs.html" class="header__navDocs">Документы</a>
+            <a href="#" class="header__navFAQ">FAQ</a>
+        </div>
+        <div class="header__right col-xs-5 col-sm-3 col-md-2 col-lg-2">
+            <div class="header__user">
+                <div class="header__name">Гилфойл</div>
+                <div class="header__avatar">
+                    <img src="img/gilfoil.jpg" alt="">
+                </div>
+            </div>
+            <div class="header__out">
+                <a href="login.html">
+                    <i class="icon-logout"></i>
+                </a>
             </div>
         </div>
-        <h1 class="col-xs-12 mainTitle">
-            Служба Поддержки
-        </h1>
-        <div class="header__self col-xs-12 col-sm-6 col-lg-4">
+
+        <div class="header__self col-xs-12 col-sm-5 col-lg-4">
             <div class="header__search"><i class="icon-magnifier"></i></div>
             <div class="header__message fourth">
                 <div class="header__notice">
@@ -41,286 +54,282 @@
                     <div class="header__calendar-icon hoverMainPanel"><i class="icon-calendar front"></i><span calendar-count="0" class="header__calendar-count back">0</span></div>
                 </div>
             </div>
-            <div class="header__user fifth">
-                <div class="header__name">Гилфойл</div>
-                <div class="header__avatar">
-                    <img src="img/gilfoil.jpg" alt="">
+            <div class="header__self col-xs-12 col-sm-5 col-lg-4">
+                <div class="header__user">
+                    <div class="header__name">Гилфойл</div>
+                    <div class="header__avatar">
+                        <img src="img/gilfoil.jpg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="header__out">
-                <a href="login.html">
-                    <i class="icon-logout"></i>
-                </a>
+                <div class="header__out">
+                    <a href="login.html">
+                        <i class="icon-logout"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <div class="container-fluid container-fluid-main">
-        <div class="col-lg-10 col-md-11 col-sm-10 col-xs-12 mainWrapper-ticket">
-            <div class="col-lg-7 col-md-9 col-sm-10 col-xs-12 mainWrapper-header">
-                <nav class="menu">
-                    <a class="menuLink btn btn-sm btn-default" href="ticketList.html">
-                        <i class="icons material-icons">home</i>
-                        <span>К списку задач</span>
-                    </a>
-                </nav>
-                <div class="ticket__userMetaWrapper">
-                    <div class="ticket__userMeta">
-                        <div class="main_avatar-ticketAvatar">
-                            <img src="img/kid.jpg" alt="" class="main_avatar-image img-responsive">
+        <div class="col-lg-8 col-md-10 col-sm-11 col-xs-12 mainWrapper-ticket">
+            <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
+                <div class="col-xs-12 mainWrapper-header">
+                    <nav class="menu">
+                        <a class="menuLink btn btn-sm btn-default" href="ticketList.html">
+                            <i class="icons material-icons">home</i>
+                            <span>К списку задач</span>
+                        </a>
+                    </nav>
+                    <div class="ticket__userMetaWrapper">
+                        <div class="ticket__userMeta">
+                            <div class="main_avatar-ticketAvatar">
+                                <img src="img/kid.jpg" alt="" class="main_avatar-image img-responsive">
+                            </div>
+                            <div class="ticket__userMeta-name">Covfefe</div>
                         </div>
-                        <div class="ticket__userMeta-name">Covfefe</div>
+                        <div class="ticket__meta-date">
+                            <i class="icon-calendar"></i>
+                            <span>25 Января</span>
+                        </div>
                     </div>
-                    <div class="ticket__meta-date">
-                        <i class="icon-calendar"></i>
-                        <span>25 Января</span>
-                    </div>
+
+
                 </div>
 
 
-            </div>
-
-
-            <div class="ticket__recourseWrapper col-lg-7 col-md-9 col-sm-10 col-xs-12 ">
-                <div class="ticket__recourseTitleWrapper">
-                    <h3 class="ticket__recourseTitle">И лампа не горит</h3>
-                    <div class="ticket__recoursePriority">
-                        <div class="oneTicket__priority">
-                            <div class="oneTicket__label-priority label label-warning">Срочный</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ticket__recourseTextWrapper">
-                    <div class="ticket__recourseText">
-                        А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius et eum excepturi fuga hic id illo incidunt, maxime quasi, ratione recusandae sed voluptatem. Consequatur cumque dolore fugiat molestiae molestias nostrum placeat quos rerum, saepe sint? Alias amet eaque ipsam iure iusto mollitia odio quae qui sequi tempora. Consectetur delectus dolores nemo odit praesentium quaerat quidem vel.
-                        Мало, кто может это делать.
-                    </div>
-                </div>
-                <div class="ticket__addedFiles">
-                    <h4 class="modal-title">
-                        <i class="icon-docs"></i>
-                        <span>Все прикреплённые файлы</span>
-                    </h4>
-
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#file1" class="collapsed" aria-expanded="false">песик.jpg</a>
-                                </h4>
-                            </div>
-                            <div id="file1" class="panel-collapse collapse" aria-expanded="false" style="height: 0;">
-                                <div class="panel-body">
-                                    <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!--</div>-->
-
-                        <!--<div class="panel-group">-->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#file2" class="collapsed" aria-expanded="false">космос.простокосмос</a>
-                                </h4>
-                            </div>
-                            <div id="file2" class="panel-collapse collapse" aria-expanded="false" style="height: 0;">
-                                <div class="panel-body">
-                                    <img src="http://cdn.newsapi.com.au/image/v1/85fb305132eb20ebbb01af386983c8a1" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!--</div>-->
-
-                        <!--<div class="panel-group">-->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#file3" class="collapsed" aria-expanded="false">бла–бла.zip</a>
-                                </h4>
-                            </div>
-                            <div id="file3" class="panel-collapse collapse" aria-expanded="false" style="height: 0;">
-                                <div class="panel-body">
-                                    <button class="btn btn-success btn-sm">
-                                        нажатии начать скачивание файла
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--</div>-->
-                        <!--<div class="panel-group">-->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#file4" class="collapsed" aria-expanded="false">большой_пейзаж.jpg</a>
-                                </h4>
-                            </div>
-                            <div id="file4" class="panel-collapse collapse" aria-expanded="false">
-                                <div class="panel-body">
-                                    <img src="http://wowslider.com/sliders/demo-23/data1/images/hohenschwangau532864.jpg" alt="">
-                                </div>
+                <div class="ticket__recourseWrapper col-xs-12 ">
+                    <div class="ticket__recourseTitleWrapper">
+                        <h3 class="ticket__recourseTitle">И лампа не горит</h3>
+                        <div class="ticket__recoursePriority">
+                            <div class="oneTicket__priority">
+                                <div class="oneTicket__label-priority label label-warning">Срочный</div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-7 col-md-9 col-sm-10 col-xs-12 ticket__replyWrapper">
-
-                <div class="ticket__replyHolder">
-                    <div class="ticket__replyAvatarWrapper">
-                        <div class="main_avatar-ticketAvatar">
-                            <img src="img/nelson.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="ticket__replyTextWrapper">
-                        <div class="ticket__replyTextTitle">
-                            <h4 class="ticket__replyName">Нельсон "Башка" Бигетти</h4>
-                            <div class="ticket__meta-date">11 Февраля</div>
-                        </div>
-                        <div class="ticket__replyText-text">
-                            А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все.
+                    <div class="ticket__recourseTextWrapper">
+                        <div class="ticket__recourseText">
+                            А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius et eum excepturi fuga hic id illo incidunt, maxime quasi, ratione recusandae sed voluptatem. Consequatur cumque dolore fugiat molestiae molestias nostrum placeat quos rerum, saepe sint? Alias amet eaque ipsam iure iusto mollitia odio quae qui sequi tempora. Consectetur delectus dolores nemo odit praesentium quaerat quidem vel.
                             Мало, кто может это делать.
                         </div>
                     </div>
-                </div>
-                <div class="ticket__replyHolder">
-                    <div class="ticket__replyAvatarWrapper">
-                        <div class="main_avatar-ticketAvatar">
-                            <img src="img/erlih.png" alt="">
+                    <div class="ticket__addedFiles">
+                        <h4 class="modal-title">
+                            <i class="icon-docs"></i>
+                            <span>Все прикреплённые файлы</span>
+                        </h4>
+
+                        <div class="ticket__replyFiles-list">
+                            <div class="ticket__replyFiles-thumbnail">
+                                <i class="icon-folder-alt"></i>
+                                <a href="#file3">
+                                    <div class="uploadedFiles__oneFile">
+                                        <div class="uploadedFiles__title">
+                                            <span class="fileName">бла-бла.zip</span>
+                                            <p class="fileSize">(147.7 Кб)</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ticket__replyFiles-thumbnail">
+                                <i class="icon-picture"></i>
+                                <a href="#file2">
+                                    <div class="uploadedFiles__oneFile">
+                                        <div class="uploadedFiles__title">
+                                            <span class="fileName">песик.jpg</span>
+                                            <p class="fileSize">(77.7 Кб)</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ticket__replyFiles-thumbnail">
+                                <i class="icon-picture"></i>
+                                <a href="#file1">
+                                    <div class="uploadedFiles__oneFile">
+                                        <div class="uploadedFiles__title">
+                                            <span class="fileName">космос.простокосмос</span>
+                                            <p class="fileSize">(7357.7 Кб)</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ticket__replyFiles-thumbnail">
+                                <i class="icon-picture"></i>
+                                <a href="#file4">
+                                    <div class="uploadedFiles__oneFile">
+                                        <div class="uploadedFiles__title">
+                                            <span class="fileName">песик.jpg</span>
+                                            <p class="fileSize">(77.7 Кб)</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="ticket__replyTextWrapper">
-                        <div class="ticket__replyTextTitle">
-                            <h4 class="ticket__replyName">Эрлих</h4>
-                            <div class="ticket__meta-date">15 Февраля</div>
+                </div>
+
+
+                <div class="col-xs-12 ticket__replyWrapper">
+
+                    <div class="ticket__replyHolder">
+                        <div class="ticket__replyAvatarWrapper">
+                            <div class="main_avatar-ticketAvatar">
+                                <img src="img/nelson.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="ticket__replyText">
+                        <div class="ticket__replyTextWrapper">
+                            <div class="ticket__replyTextTitle">
+                                <h4 class="ticket__replyName">Нельсон "Башка" Бигетти</h4>
+                                <div class="ticket__meta-date">11 Февраля</div>
+                            </div>
                             <div class="ticket__replyText-text">
                                 А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все.
                                 Мало, кто может это делать.
                             </div>
-                            <div class="ticket__replyFiles">
-                                <div class="ticket__replyFiles-thumbnail">
-                                    <i class="icon-folder-alt"></i>
-                                    <a data-toggle="collapse" href="#file3">
-                                        <div class="uploadedFiles__oneFile">бла-бла.zip <p class="fileSize">(147.7
-                                            Кб)</p></div>
-                                    </a>
+                        </div>
+                    </div>
+                    <div class="ticket__replyHolder">
+                        <div class="ticket__replyAvatarWrapper">
+                            <div class="main_avatar-ticketAvatar">
+                                <img src="img/erlih.png" alt="">
+                            </div>
+                        </div>
+                        <div class="ticket__replyTextWrapper">
+                            <div class="ticket__replyTextTitle">
+                                <h4 class="ticket__replyName">Эрлих</h4>
+                                <div class="ticket__meta-date">15 Февраля</div>
+                            </div>
+                            <div class="ticket__replyText">
+                                <div class="ticket__replyText-text">
+                                    А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все.
+                                    Мало, кто может это делать.
                                 </div>
-                                <div class="ticket__replyFiles-thumbnail">
-                                    <i class="icon-picture"></i>
-                                    <a data-toggle="collapse" href="#file1">
-                                        <div class="uploadedFiles__oneFile">песик.jpg <p class="fileSize">(77.7 Кб)</p></div>
-                                    </a>
+                                <div class="ticket__replyFiles">
+                                    <div class="ticket__replyFiles-thumbnail">
+                                        <i class="icon-folder-alt"></i>
+                                        <div class="uploadedFiles__oneFile">
+                                            <div class="uploadedFiles__title">
+                                                <span class="fileName">бла-бла.zip</span>
+                                                <p class="fileSize">(147.7 Кб)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket__replyFiles-thumbnail">
+                                        <i class="icon-picture"></i>
+                                            <div class="uploadedFiles__oneFile">
+                                                <div class="uploadedFiles__title">
+                                                    <span class="fileName">песик.jpg</span>
+                                                    <p class="fileSize">(77.7 Кб)</p>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="ticket__replyHolder">
-                    <div class="ticket__replyAvatarWrapper">
-                        <div class="main_avatar-ticketAvatar">
-                            <img src="img/dinesh.jpg" alt="">
+                    <div class="ticket__replyHolder">
+                        <div class="ticket__replyAvatarWrapper">
+                            <div class="main_avatar-ticketAvatar">
+                                <img src="img/dinesh.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="ticket__replyTextWrapper">
+                            <div class="ticket__replyTextTitle">
+                                <h4 class="ticket__replyName">Динеш</h4>
+                                <div class="ticket__meta-date">15 Февраля</div>
+                            </div>
+                            <div class="ticket__replyText-text">
+                                А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все.
+                            </div>
                         </div>
                     </div>
-                    <div class="ticket__replyTextWrapper">
-                        <div class="ticket__replyTextTitle">
-                            <h4 class="ticket__replyName">Динеш</h4>
-                            <div class="ticket__meta-date">15 Февраля</div>
+                    <div class="ticket__replyHolder">
+                        <div class="ticket__replyAvatarWrapper">
+                            <div class="main_avatar-ticketAvatar">
+                                <img src="img/gilfoil.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="ticket__replyText-text">
-                            А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все.
-                        </div>
-                    </div>
-                </div>
-                <div class="ticket__replyHolder">
-                    <div class="ticket__replyAvatarWrapper">
-                        <div class="main_avatar-ticketAvatar">
-                            <img src="img/gilfoil.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="ticket__replyTextWrapper">
-                        <form class=" form-group ticket__replyTextarea">
-                            <textarea class="form-control well well-sm ticket__replyText-input" rows="3" cols="100%"
-                                      maxlength="100%" id="comment" placeholder="Сообщение"></textarea>
-                            <div id="files" class="uploadedFiles__holder"></div>
-                            <div class="ticket__formWrapper">
-                                <div class="ticket__formButtons">
-                                    <button type="button" class="btn btn-link ticket__formOption" data-toggle="collapse" data-target="#collapse">
-                                        <i id="formArrow" class="icons material-icons">keyboard_arrow_down</i>
-                                        Дополнительно
-                                    </button>
-                                    <button class="btn btn-primary ticket__formBtn">
-                                        <i class="icon-paper-plane"></i>
-                                        <span>Ответить</span>
-                                    </button>
+                        <div class="ticket__replyTextWrapper">
+                            <form class=" form-group ticket__replyTextarea">
+                                <textarea class="form-control well well-sm ticket__replyText-input" rows="3" cols="100%"
+                                          maxlength="100%" id="comment" placeholder="Сообщение"></textarea>
+                                <div id="files" class="uploadedFiles__holder"></div>
+                                <div class="ticket__formWrapper">
+                                    <div class="ticket__formButtons">
+                                        <button type="button" class="btn btn-link ticket__formOption" data-toggle="collapse" data-target="#collapse">
+                                            <i id="formArrow" class="icons material-icons">keyboard_arrow_down</i>
+                                            Дополнительно
+                                        </button>
+                                        <button class="btn btn-primary ticket__formBtn">
+                                            <i class="icon-paper-plane"></i>
+                                            <span>Ответить</span>
+                                        </button>
 
-                                </div>
-                                <div class="ticket__controlBtnContainer">
-                                    <div id="collapse" class="form-group collapse mainContent__replyControlWrapper">
-                                        <div class=" mainContent__replyControl">
-                                            <div class="mainContent__replyControl-title"><i class="icon-user"></i><strong>Назначен</strong></div>
-                                            <div class="mainContent__replyControl-select">
-                                                <select required class="form-control mainContent__control-select">
-                                                    <option value="0" class="mainContent__control-option">–</option>
-                                                    <option value="1" class="mainContent__control-option">Нельсон "Башка" Бигетти</option>
-                                                    <option value="2" class="mainContent__control-option">Эрлих</option>
-                                                    <option value="3" class="mainContent__control-option">Динеш</option>
-                                                    <option value="4" class="mainContent__control-option">Ричард</option>
-                                                    <option selected value="5" class="mainContent__control-option">Гилфойл</option>
-                                                    <option value="6" class="mainContent__control-option">Hackerman</option>
-                                                </select>
+                                    </div>
+                                    <div class="ticket__controlBtnContainer">
+                                        <div id="collapse" class="form-group collapse mainContent__replyControlWrapper">
+                                            <div class=" mainContent__replyControl">
+                                                <div class="mainContent__replyControl-title"><i class="icon-user"></i><strong>Назначен</strong></div>
+                                                <div class="mainContent__replyControl-select">
+                                                    <select required class="form-control mainContent__control-select">
+                                                        <option value="0" class="mainContent__control-option">–</option>
+                                                        <option value="1" class="mainContent__control-option">Нельсон "Башка" Бигетти</option>
+                                                        <option value="2" class="mainContent__control-option">Эрлих</option>
+                                                        <option value="3" class="mainContent__control-option">Динеш</option>
+                                                        <option value="4" class="mainContent__control-option">Ричард</option>
+                                                        <option selected value="5" class="mainContent__control-option">Гилфойл</option>
+                                                        <option value="6" class="mainContent__control-option">Hackerman</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="mainContent__replyControl">
-                                            <div class="mainContent__replyControl-title"><i class="icon-calendar"></i><strong>Срок выполнения</strong></div>
-                                            <div class="mainContent__replyControl-select">
-                                                <input type="datetime-local" class="form-control mainContent__control-select">
+                                            <div class="mainContent__replyControl">
+                                                <div class="mainContent__replyControl-title"><i class="icon-calendar"></i><strong>Срок выполнения</strong></div>
+                                                <div class="mainContent__replyControl-select">
+                                                    <input type="datetime-local" class="form-control mainContent__control-select">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="mainContent__replyControl">
-                                            <div class="mainContent__replyControl-title"><i class="icon-info"></i><strong>Статус</strong></div>
-                                            <div class="mainContent__replyControl-select">
-                                                <select required class="form-control mainContent__control-select">
-                                                    <option value="0" class="mainContent__control-option">–</option>
-                                                    <option selected value="1" class="mainContent__control-option">Новая</option>
-                                                    <option value="2" class="mainContent__control-option">В работе</option>
-                                                    <option value="5" class="mainContent__control-option">Отмена</option>
-                                                </select>
+                                            <div class="mainContent__replyControl">
+                                                <div class="mainContent__replyControl-title"><i class="icon-info"></i><strong>Статус</strong></div>
+                                                <div class="mainContent__replyControl-select">
+                                                    <select required class="form-control mainContent__control-select">
+                                                        <option value="0" class="mainContent__control-option">–</option>
+                                                        <option selected value="1" class="mainContent__control-option">Новая</option>
+                                                        <option value="2" class="mainContent__control-option">В работе</option>
+                                                        <option value="5" class="mainContent__control-option">Отмена</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="mainContent__replyControl">
-                                            <div class="mainContent__replyControl-title"><i class="icon-fire"></i><strong>Приоритет</strong></div>
-                                            <div class="mainContent__replyControl-select">
-                                                <select required class="form-control mainContent__control-select">
-                                                    <option value="0" class="mainContent__control-option">–</option>
-                                                    <option value="5" class="mainContent__control-option">Немедленный</option>
-                                                    <option value="4" class="mainContent__control-option">Срочный</option>
-                                                    <option value="3" class="mainContent__control-option">Высокий</option>
-                                                    <option selected value="2" class="mainContent__control-option">Нормальный</option>
-                                                    <option value="1" class="mainContent__control-option">Низкий</option>
-                                                </select>
+                                            <div class="mainContent__replyControl">
+                                                <div class="mainContent__replyControl-title"><i class="icon-fire"></i><strong>Приоритет</strong></div>
+                                                <div class="mainContent__replyControl-select">
+                                                    <select required class="form-control mainContent__control-select">
+                                                        <option value="0" class="mainContent__control-option">–</option>
+                                                        <option value="5" class="mainContent__control-option">Немедленный</option>
+                                                        <option value="4" class="mainContent__control-option">Срочный</option>
+                                                        <option value="3" class="mainContent__control-option">Высокий</option>
+                                                        <option selected value="2" class="mainContent__control-option">Нормальный</option>
+                                                        <option value="1" class="mainContent__control-option">Низкий</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class=" mainContent__replyControl mainContent__addFiles">
-                                            <div class="mainContent__replyControl-title"><i class="icon-paper-clip"></i><strong>Добавить файлы</strong></div>
-                                            <div class="mainContent__replyControl-selectFiles">
-                                                    <label for="uploadFile" class="mainContent__replyControl-specialLabel form-control btn btn-primary">
-                                                        <span class="mainContent__replyControl-specialSpan btn-primary">
-                                                            <i class="icon-arrow-up"></i> Выберите файл
-                                                        </span>
-                                                    <input id="uploadFile" onchange="myFunction()" name="uploadFile" type="file" multiple class="mainContent__replyControl-inputFiles">
-                                                    </label>
+                                            <div class=" mainContent__replyControl mainContent__addFiles">
+                                                <div class="mainContent__replyControl-title"><i class="icon-paper-clip"></i><strong>Добавить файлы</strong></div>
+                                                <div class="mainContent__replyControl-selectFiles">
+                                                        <label for="uploadFile" class="mainContent__replyControl-specialLabel form-control btn btn-primary">
+                                                            <span class="mainContent__replyControl-specialSpan btn-primary">
+                                                                <i class="icon-arrow-up"></i> Выберите файл
+                                                            </span>
+                                                        <input id="uploadFile" onchange="myFunction()" name="uploadFile" type="file" multiple class="mainContent__replyControl-inputFiles">
+                                                        </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
         </div>

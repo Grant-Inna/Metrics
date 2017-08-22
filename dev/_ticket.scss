@@ -58,7 +58,7 @@
 .modal-title {
   @include rowFlex();
   justify-content: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   > i {
     color: inherit;
   }
@@ -208,6 +208,10 @@
     display: flex;
     align-items: center;
     z-index: 100;
+    transition: 0s !important;
+    > .btn-primary {
+      transition: 0s !important;
+    }
   }
   &-specialSpan {
       display: flex;
@@ -333,11 +337,22 @@
   > img {
     max-width: 50%;
   }
+  &-list {
+    @extend .ticket__replyFiles;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
 }
 .ticket__replyFiles-thumbnail {
   @include rowFlex();
   justify-content: flex-start;
+  width: auto;
   > i {
     color: #23527c;
     font-size: 16px;

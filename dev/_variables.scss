@@ -99,17 +99,22 @@ $time_Transition: .5s;
   justify-content: $j-c;
   align-items: center
 }
+@mixin centerFlex()
+{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
 
 @mixin iconsProp( $border-width: 1.5px ) {
   width: 30px;
   min-width: 30px;
   height: 30px;
   border-radius: 25px;
-  border: $border-width solid transparent;
 }
 
 @mixin transition() {
-  transition: all .7s;
+  transition: all .5s;
 }
 
 @mixin iconSize( $width: 30px, $height: 30px) {

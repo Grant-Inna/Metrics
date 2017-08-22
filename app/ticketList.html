@@ -18,29 +18,16 @@
 <body>
 <div class="row" id="container-main">
     <header class="header">
-        <div class="header__info col-lg-2">
-            <h1 class="header__title">Метрика</h1>
-            <div class="header__menu">
-                <div class="header__menuWrapper"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></div>
-            </div>
+        <div class="header__info">
+            <div class="header__logo"></div>
         </div>
-        <h1 class="col-xs-12 mainTitle">
-            Служба Поддержки
-        </h1>
-        <div class="header__self col-xs-12 col-sm-6 col-lg-4">
-            <div class="header__search"><i class="icon-magnifier"></i></div>
-            <div class="header__message fourth">
-                <div class="header__notice">
-                    <div class="header__notice-icon hoverMainPanel"><i class="icon-bell front"></i><span notice-count="42" class="header__notice-count back">42</span></div>
-                </div>
-                <div class="header__mail">
-                    <div class="header__mail-icon hoverMainPanel"><i class="icon-envelope-open front"></i><span mail-count="8" class="header__mail-count back">8</span></div>
-                </div>
-                <div class="header__calendar">
-                    <div class="header__calendar-icon hoverMainPanel"><i class="icon-calendar front"></i><span calendar-count="0" class="header__calendar-count back">0</span></div>
-                </div>
-            </div>
-            <div class="header__user fifth">
+        <div class="header__nav col-xs-4 col-sm-3 col-md-2 col-lg-2">
+            <a href="allTickets.html" class="header__navTickets">Тикеты</a>
+            <a href="docs.html" class="header__navDocs">Документы</a>
+            <a href="#" class="header__navFAQ">FAQ</a>
+        </div>
+        <div class="header__right col-xs-5 col-sm-3 col-md-2 col-lg-2">
+            <div class="header__user">
                 <div class="header__name">Гилфойл</div>
                 <div class="header__avatar">
                     <img src="img/gilfoil.jpg" alt="">
@@ -56,17 +43,17 @@
     <div class="container-fluid container-fluid-main">
         <div class="col-lg-10 col-md-11 col-sm-12 col-xs-12 mainWrapper">
             <div class="col-xs-12 list__controlBtnHolder">
-                <div class="col-md-4 col-lg-3 list__controlBtn-addBtn">
+                <div class="list__controlBtn-addBtn">
                     <button class="btn btn-primary list__addBtn">
                         <i class="icon-note"></i>
                         Открыть тикет
                     </button>
                 </div>
-                <form class="form-group col-md-10 col-lg-8 list__controlBtn-searchHolder">
+                <form class="form-group list__controlBtn-searchHolder">
                     <div class="list__controlBtn-search">
                             <div class="input-group list__controlBtn">
                                 <input type="text" class="form-control list__searchInput" placeholder="Поиск" name="search">
-                                <button class="btn btn-default icon-magnifier list__searchBtn " type="submit"></button>
+                                <button class="btn btn-primary icon-magnifier list__searchBtn " type="submit"></button>
                             </div>
                     </div>
                 </form>
