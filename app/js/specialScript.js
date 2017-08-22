@@ -8,6 +8,11 @@ $(function(){
         }
     )
 
+
+    $(' .ticket__formOption ').click(function() {
+        $(' #formArrow ').toggleClass( 'spinMe' );
+    });
+
 });
 
 function myFunction(){
