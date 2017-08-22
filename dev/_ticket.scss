@@ -36,12 +36,19 @@
   @include rowFlex();
   justify-content: flex-start;
   height: 32px;
-  padding: 0;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 0 12px;
   margin-top: 25px;
   .badge {
     margin-left: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #fff;
+    text-align: center;
   }
 }
 
@@ -308,4 +315,12 @@
     color: #23527c;
     font-size: 16px;
   }
+}
+
+#formArrow {
+  transition: all .7s;
+}
+.spinMe {
+  transition: all .7s;
+  transform: rotateZ( 180deg );
 }
