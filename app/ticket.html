@@ -81,8 +81,8 @@
             </div>
 
 
-            <div class="ticket__recourseWrapper">
-                <div class="col-lg-7 col-md-9 col-sm-10 col-xs-12 ticket__recourseTitleWrapper">
+            <div class="ticket__recourseWrapper col-lg-7 col-md-9 col-sm-10 col-xs-12 ">
+                <div class="ticket__recourseTitleWrapper">
                     <h3 class="ticket__recourseTitle">И лампа не горит</h3>
                     <div class="ticket__recoursePriority">
                         <div class="oneTicket__priority">
@@ -90,97 +90,76 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-9 col-sm-10 col-xs-12 ticket__recourseTextWrapper">
+                <div class="ticket__recourseTextWrapper">
                     <div class="ticket__recourseText">
                         А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius et eum excepturi fuga hic id illo incidunt, maxime quasi, ratione recusandae sed voluptatem. Consequatur cumque dolore fugiat molestiae molestias nostrum placeat quos rerum, saepe sint? Alias amet eaque ipsam iure iusto mollitia odio quae qui sequi tempora. Consectetur delectus dolores nemo odit praesentium quaerat quidem vel.
                         Мало, кто может это делать.
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-9 col-sm-10 col-xs-12 ticket__addedFiles">
-                    <button type="button" class="btn btn-primary ticket__addedFiles" data-toggle="modal" data-target="#filesModal">
-                        <span>Прикреплённые файлы</span>
-                        <span class="badge">4</span>
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="filesModal" role="dialog">
-                        <div class="modal-dialog modal-lg">
+                <div class="ticket__addedFiles">
+                    <h4 class="modal-title">
+                        <i class="icon-docs"></i>
+                        <span>Все прикреплённые файлы</span>
+                    </h4>
 
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">
-                                        <i class="icon-docs"></i>
-                                        <span>Все прикреплённые файлы</span>
-                                    </h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="panel-group" id="accordion">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#file1">песик.jpg</a>
-                                                </h4>
-                                            </div>
-                                            <div id="file1" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--</div>-->
-
-                                        <!--<div class="panel-group">-->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#file2">космос.простокосмос</a>
-                                                </h4>
-                                            </div>
-                                            <div id="file2" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <img src="http://cdn.newsapi.com.au/image/v1/85fb305132eb20ebbb01af386983c8a1" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--</div>-->
-
-                                        <!--<div class="panel-group">-->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#file3">бла–бла.zip</a>
-                                                </h4>
-                                            </div>
-                                            <div id="file3" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <button class="btn btn-success btn-sm">
-                                                        нажатии начать скачивание файла
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--</div>-->
-                                        <!--<div class="panel-group">-->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#file4">большой_пейзаж.jpg</a>
-                                                </h4>
-                                            </div>
-                                            <div id="file4" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <img src="http://wowslider.com/sliders/demo-23/data1/images/hohenschwangau532864.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#file1" class="collapsed" aria-expanded="false">песик.jpg</a>
+                                </h4>
+                            </div>
+                            <div id="file1" class="panel-collapse collapse" aria-expanded="false" style="height: 0;">
+                                <div class="panel-body">
+                                    <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg" alt="">
                                 </div>
                             </div>
+                        </div>
+                        <!--</div>-->
 
+                        <!--<div class="panel-group">-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#file2" class="collapsed" aria-expanded="false">космос.простокосмос</a>
+                                </h4>
+                            </div>
+                            <div id="file2" class="panel-collapse collapse" aria-expanded="false" style="height: 0;">
+                                <div class="panel-body">
+                                    <img src="http://cdn.newsapi.com.au/image/v1/85fb305132eb20ebbb01af386983c8a1" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--</div>-->
+
+                        <!--<div class="panel-group">-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#file3" class="collapsed" aria-expanded="false">бла–бла.zip</a>
+                                </h4>
+                            </div>
+                            <div id="file3" class="panel-collapse collapse" aria-expanded="false" style="height: 0;">
+                                <div class="panel-body">
+                                    <button class="btn btn-success btn-sm">
+                                        нажатии начать скачивание файла
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--</div>-->
+                        <!--<div class="panel-group">-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#file4" class="collapsed" aria-expanded="false">большой_пейзаж.jpg</a>
+                                </h4>
+                            </div>
+                            <div id="file4" class="panel-collapse collapse" aria-expanded="false">
+                                <div class="panel-body">
+                                    <img src="http://wowslider.com/sliders/demo-23/data1/images/hohenschwangau532864.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -222,17 +201,18 @@
                                 А сегодня в завтрашний день не все могут смотреть. Вернее, смотреть могут не только лишь все.
                                 Мало, кто может это делать.
                             </div>
-                            <div data-toggle="modal" data-target="#filesModal"  class="ticket__replyFiles">
+                            <div class="ticket__replyFiles">
                                 <div class="ticket__replyFiles-thumbnail">
                                     <i class="icon-folder-alt"></i>
                                     <a data-toggle="collapse" href="#file3">
-                                        <div class="uploadedFiles__oneFile">бла-бла.zip (147.7 Кб)</div>
+                                        <div class="uploadedFiles__oneFile">бла-бла.zip <p class="fileSize">(147.7
+                                            Кб)</p></div>
                                     </a>
                                 </div>
                                 <div class="ticket__replyFiles-thumbnail">
                                     <i class="icon-picture"></i>
                                     <a data-toggle="collapse" href="#file1">
-                                        <div class="uploadedFiles__oneFile">песик.jpg  (77.7 Кб)</div>
+                                        <div class="uploadedFiles__oneFile">песик.jpg <p class="fileSize">(77.7 Кб)</p></div>
                                     </a>
                                 </div>
                             </div>
