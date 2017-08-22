@@ -24,16 +24,19 @@ function myFunction(){
             for (var i = 0; i < x.files.length; i++) {
                 var file = x.files[i];
                 if ('name' in file) {
-                    txt += "<div class=\"uploadedFiles__oneFile\">" + file.name;
+                    txt += "<div class=\"uploadedFiles__oneFileHolder\"><div class=\"uploadedFiles__oneFile\"><div class=\"uploadedFiles__title\">" + file.name;
                 }
                 if ('size' in file) {
                     var a = file.size;
                     var size = a * 0.001;
-                    txt += " (" + size + " Кб) </div>";
+                    txt += "<p class=\"fileSize\"> (" + size + " Кб)</p> </div> </div> <a class=\"icon-delete\">&times;</a> </div>";
                 }
             }
         }
     }
 
     document.getElementById("files").innerHTML = txt;
+    $( '.icon-delete' ).click(function() {
+        $( this ).parent().remove();
+    });
 }
