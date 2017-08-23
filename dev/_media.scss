@@ -10,10 +10,6 @@ $height__controlBtnContainer: 355px;
   html {
     font-size: 8px;
   }
-  [class*="col-"] {
-    padding-right: 7px;
-    padding-left: 7px;
-  }
   .list__oneTicketHolder {
     @include columnFlex();
     align-items: flex-end;
@@ -50,10 +46,6 @@ $height__controlBtnContainer: 355px;
   .col-xs-12 {
     margin-left: 0;
     margin-right: 0;
-  }
-  [class*="col-"] {
-    padding-right: 3px;
-    padding-left: 3px;
   }
   .header {
     flex-wrap: wrap;
@@ -104,11 +96,12 @@ $height__controlBtnContainer: 355px;
 }
 @media screen and (max-width: 440px) {
   [class*="col-"] {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .mainWrapper, .mainWrapper-ticket {
     margin-top: 45px;
+    padding-top: 20px;
   }
   .header {
     flex-direction: column;
@@ -129,7 +122,7 @@ $height__controlBtnContainer: 355px;
     }
   }
   .list__oneTicketHolder {
-    height: 150px;
+    height: 120px;
   }
   .oneTicket__metaHolder {
     justify-content: flex-start;
@@ -143,8 +136,8 @@ $height__controlBtnContainer: 355px;
   .oneTicket__caption-down {
     display: none;
   }
-  .oneTicketMeta-right {
-    margin-top: 10px;
+  .oneTicket__metaHolder {
+    width: 130px !important;
   }
   .ticket__formButtons {
     height: 75px;
@@ -184,4 +177,41 @@ $height__controlBtnContainer: 355px;
   .oneTicket__data {
     margin: 0 5px;
   }
+}
+@media screen and (max-width: 400px) {
+  .list__oneTicketHolder {
+    height: 150px;
+    justify-content: space-between;
+    padding: 5px 3px;
+  }
+  .oneTicketMeta-left {
+    flex-wrap: wrap;
+    height: 50px;
+  }
+  .oneTicket__id {
+    flex-grow: 1;
+  }
+  .oneTicket__status {
+    flex-grow: 8;
+  }
+  .oneTicketMeta-right {
+    height: 75px;
+    flex-direction: column;
+  }
+  .oneTicket__metaHolder {
+    width: 100% !important;
+    justify-content: flex-start;
+    .oneTicket__priority {
+      margin: 0;
+    }
+  }
+  .oneTicket__data {
+    width: 100% !important;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .oneTicket__assigned {
+    width: 100% !important;
+  }
+
 }

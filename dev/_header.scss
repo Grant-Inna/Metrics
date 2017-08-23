@@ -97,14 +97,34 @@
 .header__self * {
   @include transition();
 }
-.header__search,
-.header__out,
-.header__message > div {
-  @include iconsProp;
-  @include rowFlex( $j-c: center);
+
+.header__out {
+  @include centerFlex;
+  @include transition;
+}
+.header__out > a {
+  @include iconsProp();
+  @include centerFlex;
   @include transition;
 }
 
+
+.header__out {
+  height: 100%;
+  i:before {
+    color: #777;
+    font-weight: 600;
+  }
+}
+.header__out > a:hover {
+  border-radius: 25px;
+  background-color: #f8f8ff;
+  box-shadow: 0 0 3px 1px rgba(35, 82, 124, 0.6);
+  @include transition;
+  &:hover .icon-logout {
+    color: $color_hoverBorder;
+  }
+}
 
 .header__message {
   @include rowFlex( $j-c: space-around )
@@ -153,23 +173,6 @@
   }
 }
 
-.header__out {
-  height: 100%;
-  border-radius: 25px !important;
-  i:before {
-    color: #777;
-    font-weight: 600;
-  }
-}
-.header__out:hover {
-  border-radius: 25px;
-  background-color: #f8f8ff;
-  box-shadow: 0 0 3px 1px rgba(35, 82, 124, 0.6);
-  @include transition;
-  &:hover .icon-logout {
-    color: $color_hoverBorder;
-  }
-}
 
 /*    Count Color   */
 

@@ -15,13 +15,15 @@
   @include rowFlex( $j-c: space-between );
   align-items: baseline;
   padding: 0 6px;
+  span {
+    @include centerFlex;
+  }
 }
 .list__controlBtn-searchHolder {
   @include rowFlex( $j-c: flex-end );
   padding: 5px 0;
   margin-bottom: 0;
   > div {
-    margin: 0 3px
   }
 }
 .controlBtn__filter-label {
@@ -41,6 +43,7 @@
 .list__searchBtn {
   cursor: pointer;
   height: 34px;
+  width: 34px;
   border-color: transparent;
   border-radius: 0 3px 3px 0;
   @include transition;
@@ -75,11 +78,10 @@
   }
 }
 .oneTicket__metaHolder {
-  height: 80%;
+  height: 30px;
   width: 125px !important;
   width: -webkit-fill-available;
   @include rowFlex( $j-c: flex-end );
-  flex-wrap: wrap;
 }
 .oneTicket__label {
   padding: .3em .6em;
