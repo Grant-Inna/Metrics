@@ -80,3 +80,12 @@ input::-webkit-input-placeholder {color:#fff !important; font-weight: 600;}
 input::-moz-placeholder          {color:#fff !important; font-weight: 600;}/* Firefox 19+ */
 input:-moz-placeholder           {color:#fff !important; font-weight: 600;}/* Firefox 18- */
 input:-ms-input-placeholder      {color:#fff !important; font-weight: 600;}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .login__logo {
+    display: none;
+  }
+  .login__form {
+    margin-top: 10px;
+  }
+}

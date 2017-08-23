@@ -52,9 +52,6 @@
 /* LEMON */
 /* HONEYDEW */
 /*   COMMON   */
-* {
-  float: none; }
-
 body, html {
   width: 100%;
   min-width: 320px;
@@ -72,7 +69,7 @@ body, html {
   height: auto;
   position: relative; }
   #container-login {
-    height: 100vh;
+    height: 100%;
     background: -webkit-linear-gradient(135deg, #7474BF, #6697af);
     background: -o-linear-gradient(135deg, #7474BF, #6697af);
     background: linear-gradient(-45deg, #7474BF, #6697af);
@@ -762,6 +759,12 @@ input:-moz-placeholder {
 input:-ms-input-placeholder {
   color: #fff !important;
   font-weight: 600; }
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .login__logo {
+    display: none; }
+  .login__form {
+    margin-top: 10px; } }
 
 .list__ticketListWrapper > div:last-of-type {
   border-bottom: 1px solid rgba(177, 169, 189, 0.3); }
@@ -1825,6 +1828,9 @@ sup {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s; }
+
+* {
+  float: none; }
 
 @media screen and (min-width: 761px) {
   .header {
