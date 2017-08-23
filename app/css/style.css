@@ -496,6 +496,7 @@ button {
   min-width: 30px;
   height: 30px;
   border-radius: 25px;
+  height: 45px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -518,7 +519,7 @@ button {
     color: #777;
     font-weight: 600; }
 
-.header__out > a:hover {
+.header__out:hover i {
   border-radius: 25px;
   background-color: #f8f8ff;
   -webkit-box-shadow: 0 0 3px 1px rgba(35, 82, 124, 0.6);
@@ -526,7 +527,7 @@ button {
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s; }
-  .header__out > a:hover:hover .icon-logout {
+  .header__out:hover i:hover .icon-logout {
     color: #3F3940; }
 
 .header__message {
@@ -2049,7 +2050,7 @@ sup {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 5px 3px; }
+    padding: 8px 3px; }
   .oneTicketMeta-left {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
