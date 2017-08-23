@@ -52,6 +52,9 @@
 /* LEMON */
 /* HONEYDEW */
 /*   COMMON   */
+* {
+  float: none; }
+
 body, html {
   width: 100%;
   min-width: 320px;
