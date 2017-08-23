@@ -1916,6 +1916,9 @@ sup {
       width: 100%; } }
 
 @media screen and (max-width: 440px) {
+  [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px; }
   .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1942,11 +1945,17 @@ sup {
     text-align: center; }
   .oneTicketMeta-right > div {
     min-width: auto; }
+  .list__oneTicketHolder {
+    height: 150px; }
   .oneTicket__metaHolder {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+  .oneTicket__id {
+    padding-left: 5px; }
+  .oneTicketMeta-right {
+    margin-top: 10px; }
   .ticket__formButtons {
     height: 75px;
     -webkit-box-orient: vertical;
@@ -1976,4 +1985,8 @@ sup {
     position: absolute;
     left: 14px; }
   .ticket__formOption {
-    margin-left: -11px; } }
+    margin-left: -11px; }
+  .oneTicket__priority {
+    margin: 0 5px; }
+  .oneTicket__data {
+    margin: 0 5px; } }
