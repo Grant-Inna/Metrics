@@ -23,10 +23,15 @@ body, html {
   position: relative;
 
   &-login {
+    height: 100%;
+    position: fixed;
     @extend #container;
     background: linear-gradient(-45deg, #7474BF, rgba(102, 151, 175, 1));
     background-size: contain;
     @include columnFlex( $j-c: center );
+    > .container-fluid {
+      padding: 0;
+    }
   }
   &-main {
     @extend #container;
