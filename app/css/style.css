@@ -892,7 +892,6 @@ input:-ms-input-placeholder {
   border-top: 1px solid #e7ebef; }
 
 .oneTicketMeta, .oneTicketMeta-left, .oneTicketMeta-right {
-  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -921,7 +920,7 @@ input:-ms-input-placeholder {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%; }
+    width: 55%; }
 
 .oneTicket__metaHolder {
   height: 30px;
@@ -1808,11 +1807,15 @@ sup {
 
 @media screen and (min-width: 761px) {
   .header {
-    height: 80px; } }
+    height: 80px; }
+  .oneTicket__data {
+    margin: 0 10px; } }
 
 @media screen and (max-width: 760px) {
   html {
     font-size: 8px; }
+  .header__right {
+    width: 30%; }
   .list__oneTicketHolder {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1834,20 +1837,25 @@ sup {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end;
-    height: 130px; } }
+    height: 130px; }
+  .oneTicketMeta-right {
+    width: 70%; } }
 
 @media screen and (max-width: 670px) {
   .oneTicketMeta-right {
-    width: 90%; } }
+    width: 100%; }
+  .oneTicket__metaHolder {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 
 @media screen and (max-width: 600px) {
   .header {
     height: auto;
-    /*padding-left: 5px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
     padding-bottom: 10px; }
+  .mainWrapper, .mainWrapper-ticket, .mainWrapper-ticket, .mainWrapper-ticket {
+    margin-top: 90px; }
   .header__nav {
     padding-top: 10px;
     -webkit-box-orient: vertical;
@@ -1863,6 +1871,8 @@ sup {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .header__right {
+    width: 35%; }
   .ticket__replyText-input {
     width: 100%; } }
 
@@ -1870,6 +1880,9 @@ sup {
   .col-xs-12 {
     margin-left: 0;
     margin-right: 0; }
+  .mainWrapper, .mainWrapper-ticket, .mainWrapper-ticket, .mainWrapper-ticket {
+    margin-top: 80px;
+    padding-top: 20px; }
   .header {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1881,7 +1894,8 @@ sup {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+    width: 45%; }
   .header__user {
     margin-right: 20px; }
   .list__controlBtnHolder {
@@ -1933,15 +1947,43 @@ sup {
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap; }
     .mainContent__replyControlWrapper > div {
-      width: 100%; } }
+      width: 100%; }
+  .list__oneTicketHolder {
+    height: 150px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 8px 3px; }
+  .oneTicketMeta-right {
+    height: 75px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .oneTicket__metaHolder {
+    width: 100% !important;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .oneTicket__metaHolder .oneTicket__priority {
+      margin: 0; }
+  .oneTicket__data {
+    width: 100% !important;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0; }
+  .oneTicket__assigned {
+    width: 100% !important; } }
 
 @media screen and (max-width: 440px) {
   [class*="col-"] {
     padding-right: 10px;
     padding-left: 10px; }
-  .mainWrapper, .mainWrapper-ticket, .mainWrapper-ticket {
-    margin-top: 80px;
-    padding-top: 20px; }
   .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1966,8 +2008,6 @@ sup {
       margin: 5px auto; }
   .mainTitle {
     text-align: center; }
-  .oneTicketMeta-right > div {
-    min-width: auto; }
   .list__oneTicketHolder {
     height: 120px; }
   .oneTicket__metaHolder {
@@ -1981,8 +2021,6 @@ sup {
     height: auto; }
   .oneTicket__caption-down {
     display: none; }
-  .oneTicket__metaHolder {
-    width: 130px !important; }
   .ticket__formButtons {
     height: 75px;
     -webkit-box-orient: vertical;

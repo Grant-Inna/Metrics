@@ -64,7 +64,6 @@
   border-top: 1px solid #e7ebef;
 }
 .oneTicketMeta {
-  height: 100%;
   @include rowFlex( $j-c: flex-start );
   &-left {
     @extend .oneTicketMeta;
@@ -74,7 +73,7 @@
   &-right {
     @extend .oneTicketMeta;
     @include rowFlex( $j-c: space-between );
-    width: 50%;
+    width: 55%;
   }
 }
 .oneTicket__metaHolder {
