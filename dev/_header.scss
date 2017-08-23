@@ -70,7 +70,7 @@
 }
 .header__right {
   @include rowFlex( $j-c: space-between );
-  height: auto;
+  height: 45px;
   //min-width: 200px;
   > div {
     font-weight: 600;
@@ -154,6 +154,7 @@
 }
 
 .header__out {
+  height: 100%;
   border-radius: 25px !important;
   i:before {
     color: #777;

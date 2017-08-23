@@ -436,7 +436,7 @@ button {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: auto; }
+  height: 45px; }
   .header__right > div {
     font-weight: 600; }
 
@@ -552,6 +552,7 @@ button {
     color: #3F3940; }
 
 .header__out {
+  height: 100%;
   border-radius: 25px !important; }
   .header__out i:before {
     color: #777;
@@ -849,7 +850,20 @@ input:-ms-input-placeholder {
   border-radius: 0 3px 3px 0;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
-  transition: all .5s; }
+  transition: all .5s;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*   Table   */
 .list__oneTicketHolder {
@@ -955,8 +969,9 @@ input:-ms-input-placeholder {
 
 .oneTicket__caption {
   color: inherit;
-  height: 70%;
-  max-height: 80%;
+  height: auto;
+  width: 100%;
+  max-height: 70%;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -974,7 +989,8 @@ input:-ms-input-placeholder {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  position: relative; }
 
 .oneTicket__caption:hover {
   text-decoration: none; }
@@ -986,11 +1002,11 @@ input:-ms-input-placeholder {
       -ms-flex-align: center;
           align-items: center;
   max-height: 100%;
-  height: 100%;
   overflow: hidden;
   position: relative;
   z-index: 1;
-  width: 100%; }
+  width: 100%;
+  height: 20px; }
 
 .oneTicket__caption-down {
   max-height: 100%;
@@ -1001,7 +1017,14 @@ input:-ms-input-placeholder {
   z-index: 1;
   width: 100%;
   color: #aaa;
-  font-size: 90%; }
+  font-size: 90%;
+  height: 20px; }
+
+.recourseText {
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content; }
 
 .oneTicket__title:after {
   content: ' ';
@@ -1919,6 +1942,8 @@ sup {
   [class*="col-"] {
     padding-right: 5px;
     padding-left: 5px; }
+  .mainWrapper, .mainWrapper-ticket, .mainWrapper-ticket {
+    margin-top: 45px; }
   .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1954,6 +1979,10 @@ sup {
             justify-content: flex-start; }
   .oneTicket__id {
     padding-left: 5px; }
+  .oneTicket__caption {
+    height: auto; }
+  .oneTicket__caption-down {
+    display: none; }
   .oneTicketMeta-right {
     margin-top: 10px; }
   .ticket__formButtons {
