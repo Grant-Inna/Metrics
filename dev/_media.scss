@@ -35,6 +35,8 @@ $height__controlBtnContainer: 355px;
 
 }
 
+
+/* =============== 600 =============== */
 @media screen and (max-width: 600px) {
   .header {
     height: auto;
@@ -55,7 +57,18 @@ $height__controlBtnContainer: 355px;
   .ticket__replyText-input {
     width: 100%;
   }
+  .ticket__replyFiles {
+    padding: 10px 10px 0;
+  }
+
+  .ticket__replyHolder:last-child {
+    .ticket__replyAvatarWrapper {
+      display: none;
+    }
+  }
 }
+
+/* =============== 500 =============== */
 @media screen and (max-width: 500px) {
   .col-xs-12 {
     margin-left: 0;
@@ -138,7 +151,29 @@ $height__controlBtnContainer: 355px;
   .oneTicket__assigned {
     width: 100% !important;
   }
+
+
+
+ /* .ticket__addedFiles {
+    padding: 0;
+  }
+  .ticket__replyFiles {
+    padding: 10px 0;
+  }*/
+  .ticket__replyHolder {
+    flex-direction: column;
+  }
+  .mainContent__replyControl-inputFiles {
+    left: 70px;
+  }
+  .mainContent__replyControl-specialSpan {
+    width: 191px;
+  }
+
 }
+
+
+/* =============== 440 =============== */
 @media screen and (max-width: 440px) {
   [class*="col-"] {
     padding-right: 10px;
@@ -217,7 +252,12 @@ $height__controlBtnContainer: 355px;
   .oneTicket__data {
     margin: 0 5px;
   }
+
+
 }
+
+
+/* =============== 400 =============== */
 @media screen and (max-width: 400px) {
   .list__oneTicketHolder {
     height: 150px;
@@ -252,6 +292,14 @@ $height__controlBtnContainer: 355px;
   }
   .oneTicket__assigned {
     width: 100% !important;
+  }
+
+  .ticket__recourseWrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ticket__replyFiles-list {
+    padding: 0;
   }
 
 }
