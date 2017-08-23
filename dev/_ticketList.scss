@@ -14,7 +14,7 @@
 .list__addBtn {
   @include rowFlex( $j-c: space-between );
   align-items: baseline;
-  padding: 0 6px;
+  padding: 0 10px 0 6px;
   span {
     @include centerFlex;
   }

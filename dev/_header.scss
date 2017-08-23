@@ -99,6 +99,7 @@
 }
 
 .header__out {
+  padding: 7px 0;
   height: 45px;
   @include centerFlex;
   @include transition;
