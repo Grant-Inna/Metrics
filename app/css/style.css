@@ -1839,7 +1839,7 @@ sup {
             align-items: flex-end;
     height: 130px; }
   .oneTicketMeta-right {
-    width: 70%; } }
+    width: 75%; } }
 
 @media screen and (max-width: 670px) {
   .oneTicketMeta-right {
@@ -1949,7 +1949,7 @@ sup {
     .mainContent__replyControlWrapper > div {
       width: 100%; }
   .list__oneTicketHolder {
-    height: 150px;
+    height: 130px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
