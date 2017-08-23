@@ -99,11 +99,6 @@
 }
 
 .header__out {
-  @include centerFlex;
-  @include transition;
-}
-.header__out > a {
-  @include iconsProp();
   height: 45px;
   @include centerFlex;
   @include transition;
@@ -111,7 +106,6 @@
 
 
 .header__out {
-  height: 45px;
   i:before {
     color: #777;
     font-weight: 600;
