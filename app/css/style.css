@@ -72,8 +72,7 @@ body, html {
   height: auto;
   position: relative; }
   #container-login {
-    height: 100%;
-    position: fixed;
+    height: 100vh;
     background: -webkit-linear-gradient(135deg, #7474BF, #6697af);
     background: -o-linear-gradient(135deg, #7474BF, #6697af);
     background: linear-gradient(-45deg, #7474BF, #6697af);
