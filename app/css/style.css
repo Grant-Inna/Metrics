@@ -1919,7 +1919,8 @@ sup {
 @media screen and (max-width: 600px) {
   .header {
     height: auto;
-    padding-bottom: 10px; }
+    padding-bottom: 5px;
+    padding-top: 10px; }
   .mainWrapper, .mainWrapper-ticket, .mainWrapper-ticket, .mainWrapper-ticket {
     margin-top: 90px; }
   .header__nav {
