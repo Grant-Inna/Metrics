@@ -299,7 +299,7 @@ button {
 .header__info {
   height: 50px !important;
   width: 180px;
-  margin: 1% 1% 1% 15px;
+  margin: 1% 0 1% 15px;
   padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1902,6 +1902,7 @@ sup {
   .oneTicketMeta-right {
     width: 75%; } }
 
+/* =============== 670 =============== */
 @media screen and (max-width: 670px) {
   .oneTicketMeta-right {
     width: 100%; }
@@ -1909,7 +1910,10 @@ sup {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start; } }
+            justify-content: flex-start; }
+  .header__nav > a {
+    padding: 5px 10px;
+    margin: 0 1px; } }
 
 /* =============== 600 =============== */
 @media screen and (max-width: 600px) {
@@ -1919,7 +1923,6 @@ sup {
   .mainWrapper, .mainWrapper-ticket, .mainWrapper-ticket, .mainWrapper-ticket {
     margin-top: 90px; }
   .header__nav {
-    padding-top: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1933,6 +1936,9 @@ sup {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .header__nav > a {
+      padding: 5px 15px;
+      margin: 1px; }
   .header__right {
     width: 35%; }
   .ticket__replyHolder {
@@ -1960,7 +1966,7 @@ sup {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    padding-top: 10px; }
+    padding-top: 5px; }
   .header__info {
     width: 100%; }
   .header__right {
