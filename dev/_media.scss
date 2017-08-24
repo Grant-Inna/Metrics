@@ -9,6 +9,8 @@ $height__controlBtnContainer: 355px;
     margin: 0 10px;
   }
 }
+
+/* =============== 760 =============== */
 @media screen and (max-width: 760px) {
   html {
     font-size: 8px;
@@ -33,6 +35,14 @@ $height__controlBtnContainer: 355px;
     justify-content: flex-start;
   }
 
+}
+
+/* =============== 760x420 =============== */
+@media screen and (max-width: 760px) and (max-height: 420px) {
+  .mainContent__replyControl-inputFiles {
+    position: absolute;
+    left: 100px;
+  }
 }
 
 
@@ -69,7 +79,7 @@ $height__controlBtnContainer: 355px;
 
 }
 
-/* =============== 600 =============== */
+/* =============== 600x330 =============== */
 @media screen and (max-width: 600px) and (max-height: 330px) {
   .mainContent__replyControl-specialSpan {
     width: 192px;
