@@ -58,7 +58,8 @@ body, html {
   overflow-x: hidden;
   min-height: 100%;
   height: auto;
-  font-family: 'Roboto regular', sans-serif; }
+  font-family: 'Roboto regular', sans-serif;
+  background-color: #e7ebef; }
 
 .row {
   margin: 0; }
@@ -70,10 +71,10 @@ body, html {
   position: relative; }
   #container-login {
     height: 100%;
-    background: -webkit-linear-gradient(135deg, #7474BF, #6697af);
-    background: -o-linear-gradient(135deg, #7474BF, #6697af);
-    background: linear-gradient(-45deg, #7474BF, #6697af);
-    background-size: contain;
+    background: -webkit-linear-gradient(135deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
+    background: -o-linear-gradient(135deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
+    background: linear-gradient(-45deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
+    background-size: cover;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -93,8 +94,6 @@ body, html {
             align-items: center; }
     #container-login > .container-fluid {
       padding: 0; }
-  #container-main {
-    background-color: #e7ebef; }
 
 .container-fluid-main {
   height: auto;
@@ -2003,7 +2002,7 @@ sup {
     padding: 0;
     margin-left: -10px; }
   .ticket__controlBtnContainer {
-    height: 355px; }
+    min-height: 390px; }
   .mainContent__replyControlWrapper {
     height: 355px;
     -webkit-box-orient: vertical;
@@ -2116,8 +2115,6 @@ sup {
             align-items: flex-start; }
   .ticket__formWrapper {
     margin-bottom: 25px; }
-  .ticket__controlBtnContainer {
-    height: 355px; }
   .ticket__replyAvatarWrapper {
     margin-right: 0; }
   .main_avatar-ticketAvatar {

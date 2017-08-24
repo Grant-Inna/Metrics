@@ -119,7 +119,7 @@ $height__controlBtnContainer: 355px;
     margin-left: -10px;
   }
   .ticket__controlBtnContainer {
-    height: $height__controlBtnContainer;
+    min-height: 390px;
   }
   .mainContent__replyControlWrapper {
     height: $height__controlBtnContainer;
@@ -216,9 +216,6 @@ $height__controlBtnContainer: 355px;
   }
   .ticket__formWrapper {
     margin-bottom: 25px;
-  }
-  .ticket__controlBtnContainer {
-    height: $height__controlBtnContainer;
   }
   .mainContent__replyControl,
   .ticket__replyTextWrapper,
