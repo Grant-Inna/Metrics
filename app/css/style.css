@@ -70,20 +70,10 @@ body, html {
   height: auto;
   position: relative; }
   #container-login {
-    height: 100%;
-    background: -webkit-linear-gradient(135deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
-    background: -o-linear-gradient(135deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
-    background: linear-gradient(-45deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
-    background-size: cover;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -91,7 +81,12 @@ body, html {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    height: 100%;
+    background: -webkit-linear-gradient(135deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
+    background: -o-linear-gradient(135deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
+    background: linear-gradient(-45deg, rgba(81, 25, 119, 0.6), #6697af), url("../img/map.png") center no-repeat;
+    background-size: cover; }
     #container-login > .container-fluid {
       padding: 0; }
 
