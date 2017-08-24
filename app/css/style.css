@@ -2004,7 +2004,7 @@ sup {
   .ticket__controlBtnContainer {
     min-height: 390px; }
   .mainContent__replyControlWrapper {
-    height: 355px;
+    min-height: 355px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
