@@ -619,7 +619,8 @@ button {
   backface-visibility: hidden; }
 
 .loginWrapper {
-  min-width: 300px;
+  min-width: 280px;
+  max-height: 410px;
   background: rgba(250, 250, 250, 0.6);
   border-radius: 5px;
   padding: 15px 20px; }
