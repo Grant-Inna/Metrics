@@ -1654,7 +1654,7 @@ sup {
   font-variant: all-small-caps;
   outline: none;
   min-width: 100%;
-  max-width: 100%;
+  max-width: 100% !important;
   border-radius: 3px; }
 
 .mainContent__replyControl-inputFiles {
