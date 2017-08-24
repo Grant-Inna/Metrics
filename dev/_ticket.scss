@@ -185,7 +185,7 @@
 
 
 .ticket__controlBtnContainer {
-  min-height: 240px;
+  min-height: 250px;
   width: 100%;
 }
 
@@ -198,6 +198,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 15px;
+  margin-bottom: 5px;
   flex-wrap: wrap;
 }
 
@@ -289,7 +290,7 @@
 }
 
 .uploadedFiles__holder {
-  padding: 10px 0 5px 10px;
+  padding: 10px 0 0 10px;
 }
 .uploadedFiles__oneFileHolder {
   display: flex;
@@ -305,6 +306,7 @@
   &-total {
     @extend .uploadedFiles__oneFile;
     padding-right: 12px;
+    height: 20px;
   }
 }
 .uploadedFiles__title {

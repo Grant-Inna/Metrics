@@ -1558,7 +1558,7 @@ sup {
             align-items: center; }
 
 .ticket__controlBtnContainer {
-  min-height: 240px;
+  min-height: 250px;
   width: 100%; }
 
 .mainContent__replyControlWrapper {
@@ -1572,6 +1572,7 @@ sup {
   -webkit-justify-content: space-between;
           justify-content: space-between;
   margin-top: 15px;
+  margin-bottom: 5px;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
@@ -1703,7 +1704,7 @@ sup {
   width: 100%; }
 
 .uploadedFiles__holder {
-  padding: 10px 0 5px 10px; }
+  padding: 10px 0 0 10px; }
 
 .uploadedFiles__oneFileHolder {
   display: -webkit-box;
@@ -1729,7 +1730,8 @@ sup {
           align-items: center;
   width: 100%; }
   .uploadedFiles__oneFile-total {
-    padding-right: 12px; }
+    padding-right: 12px;
+    height: 20px; }
 
 .uploadedFiles__title {
   display: -webkit-box;
