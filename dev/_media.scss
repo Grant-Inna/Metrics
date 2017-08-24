@@ -37,14 +37,6 @@ $height__controlBtnContainer: 355px;
 
 }
 
-/* =============== 760x420 =============== */
-@media screen and (max-width: 760px) and (max-height: 420px) {
-  .mainContent__replyControl-inputFiles {
-    position: absolute;
-    left: 100px;
-  }
-}
-
 
 /* =============== 600 =============== */
 @media screen and (max-width: 600px) {
@@ -79,13 +71,6 @@ $height__controlBtnContainer: 355px;
 
 }
 
-/* =============== 600x330 =============== */
-@media screen and (max-width: 600px) and (max-height: 330px) {
-  .mainContent__replyControl-specialSpan {
-    width: 192px;
-  }
-
-}
 
 /* =============== 500 =============== */
 @media screen and (max-width: 500px) {
@@ -175,9 +160,6 @@ $height__controlBtnContainer: 355px;
   .ticket__replyHolder {
     flex-direction: column;
   }
-  .mainContent__replyControl-inputFiles {
-    left: 70px;
-  }
   .mainContent__replyControl-specialSpan {
     width: 191px;
   }
@@ -251,10 +233,6 @@ $height__controlBtnContainer: 355px;
   .mainContent__replyControl-specialSpan {
     width: 135px;
   }
-  .mainContent__replyControl-inputFiles {
-    position: absolute;
-    left: 14px;
-  }
   .ticket__formOption {
     margin-left: -11px;
   }
@@ -312,9 +290,6 @@ $height__controlBtnContainer: 355px;
   }
   .ticket__replyFiles-list {
     padding: 0 0 0 10px;
-  }
-  .mainContent__replyControl-inputFiles {
-    opacity: 0;
   }
 
 }

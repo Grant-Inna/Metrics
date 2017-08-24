@@ -171,6 +171,9 @@
   .icon-star {
     color: #777;
   }
+  span {
+    @include centerFlex;
+  }
 }
 .ticket__formBtn {
   @include rowFlex();
@@ -221,9 +224,12 @@
       align-items: center;
       z-index: 1000;
       height: 30px;
-      width: $width__fileSelectInput;
+      width: 100%;
       text-align: start;
   }
+}
+.mainContent__replyControl-inputFiles {
+  opacity: 0;
 }
 .mainContent__replyControl-title {
   display: flex;
@@ -252,7 +258,6 @@
 }
 .mainContent__replyControl-inputFiles {
   position: absolute;
-  left: ($width__fileSelectInput / 2) - 15;
   color: #eaeaea;
   top: 6px;
   border: none;
@@ -297,15 +302,22 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  &-total {
+    @extend .uploadedFiles__oneFile;
+    padding-right: 12px;
+  }
 }
 .uploadedFiles__title {
   display: flex;
   flex-wrap: wrap;
 }
 .fileSize {
-  margin: 0;
-  margin-left: 4px;
+  margin: 0 0 0 4px;
   color: #b3b3b3;
+  &-total {
+    @extend .fileSize;
+    margin: 0;
+  }
 }
 .icon-delete:hover {
   cursor: pointer;
