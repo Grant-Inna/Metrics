@@ -66,6 +66,15 @@ $height__controlBtnContainer: 355px;
       display: none;
     }
   }
+
+}
+
+/* =============== 600 =============== */
+@media screen and (max-width: 600px) and (max-height: 330px) {
+  .mainContent__replyControl-specialSpan {
+    width: 192px;
+  }
+
 }
 
 /* =============== 500 =============== */
@@ -111,7 +120,8 @@ $height__controlBtnContainer: 355px;
     align-items: flex-start;
   }
   .ticket__addedFiles {
-    padding-left: 3px;
+    padding: 0;
+    margin-left: -10px;
   }
   .ticket__controlBtnContainer {
     height: $height__controlBtnContainer;
@@ -152,14 +162,6 @@ $height__controlBtnContainer: 355px;
     width: 100% !important;
   }
 
-
-
- /* .ticket__addedFiles {
-    padding: 0;
-  }
-  .ticket__replyFiles {
-    padding: 10px 0;
-  }*/
   .ticket__replyHolder {
     flex-direction: column;
   }
@@ -299,7 +301,10 @@ $height__controlBtnContainer: 355px;
     padding-right: 0;
   }
   .ticket__replyFiles-list {
-    padding: 0;
+    padding: 0 0 0 10px;
+  }
+  .mainContent__replyControl-inputFiles {
+    opacity: 0;
   }
 
 }

@@ -175,6 +175,9 @@
 .ticket__formBtn {
   @include rowFlex();
   padding: 0 15px 0 3px;
+  span {
+    @include centerFlex;
+  }
 }
 
 
@@ -243,7 +246,7 @@
   font-family: 'Roboto regular', sans-serif;
   font-variant: all-small-caps;
   outline: none;
-  width: 100%;
+  min-width: 100%;
   border-radius: 3px;
 }
 .mainContent__replyControl-inputFiles {
