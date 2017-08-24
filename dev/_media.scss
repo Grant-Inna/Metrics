@@ -56,17 +56,21 @@ $height__controlBtnContainer: 355px;
   .header__right {
     width: 35%;
   }
+
+
+  .ticket__replyHolder {
+    flex-direction: column;
+  }
+  .ticket__replyHolder:last-child {
+    .ticket__replyAvatarWrapper {
+      display: none;
+    }
+  }
   .ticket__replyText-input {
     width: 100%;
   }
   .ticket__replyFiles {
     padding: 10px 10px 0;
-  }
-
-  .ticket__replyHolder:last-child {
-    .ticket__replyAvatarWrapper {
-      display: none;
-    }
   }
 
 }
@@ -157,9 +161,6 @@ $height__controlBtnContainer: 355px;
     width: 100% !important;
   }
 
-  .ticket__replyHolder {
-    flex-direction: column;
-  }
   .mainContent__replyControl-specialSpan {
     width: 191px;
   }
