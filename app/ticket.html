@@ -12,6 +12,7 @@
     <script src="./bootstrap/dist/js/jquery.min.js" type="text/javascript"></script>
     <script src="./bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/specialScript.js" type="text/javascript"></script>
+    <script src="js/autosize.min.js" type="text/javascript"></script>
 
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/fonts.css" rel="stylesheet">
@@ -242,8 +243,8 @@
                         </div>
                         <div class="ticket__replyTextWrapper">
                             <form class=" form-group ticket__replyTextarea">
-                                <textarea class="form-control well well-sm ticket__replyText-input" rows="3" cols="100%"
-                                          maxlength="100%" id="comment" placeholder="Сообщение"></textarea>
+                                <textarea class="form-control well well-sm ticket__replyText-input" rows="auto" cols="100%"
+                                          id="comment" placeholder="Сообщение"></textarea>
 
                                 <div class="ticket__formWrapper">
                                     <div class="ticket__formButtons">
@@ -258,7 +259,7 @@
 
                                     </div>
                                     <div class="ticket__controlBtnContainer">
-                                        <div id="collapse" class="form-group collapse in mainContent__replyControlWrapper">
+                                        <div id="collapse" class="form-group collapse mainContent__replyControlWrapper">
                                             <div class=" mainContent__replyControl">
                                                 <div class="mainContent__replyControl-title"><i class="icon-user"></i><strong>Назначен</strong></div>
                                                 <div class="mainContent__replyControl-select">

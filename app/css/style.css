@@ -1797,6 +1797,9 @@ sup {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
+  .ticket__replyFiles-input {
+    height: auto;
+    resize: vertical; }
 
 .ticket__replyFiles-thumbnail {
   display: -webkit-box;

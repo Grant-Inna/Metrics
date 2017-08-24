@@ -369,8 +369,13 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  &-input {
+    height: auto;
+    resize: vertical;
+  }
 }
+
+
 .ticket__replyFiles-thumbnail {
   @include rowFlex();
   justify-content: flex-start;

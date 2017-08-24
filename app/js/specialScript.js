@@ -13,6 +13,8 @@ $(function(){
         $(' #formArrow ').toggleClass( 'spinMe' );
     });
 
+    autosize( $( 'textarea' ) );
+
 });
 
 function myFunction(){
