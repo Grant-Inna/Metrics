@@ -1639,7 +1639,8 @@ sup {
 
 .mainContent__replyControl-select {
   margin-bottom: 2%;
-  border-radius: 3px; }
+  border-radius: 3px;
+  max-width: 100%; }
   .mainContent__replyControl-selectFiles {
     width: 100%;
     position: relative;
