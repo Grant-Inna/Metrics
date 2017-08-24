@@ -1744,6 +1744,9 @@ sup {
   .fileSize-total {
     margin: 0; }
 
+.icon-delete {
+  color: #b3b3b3; }
+
 .icon-delete:hover {
   cursor: pointer;
   text-decoration: none; }
