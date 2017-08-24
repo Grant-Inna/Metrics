@@ -242,8 +242,8 @@
                             </div>
                         </div>
                         <div class="ticket__replyTextWrapper">
-                            <form class=" form-group ticket__replyTextarea">
-                                <textarea class="form-control well well-sm ticket__replyText-input" rows="auto" cols="100%"
+                            <form tabindex="1" class=" form-group ticket__replyTextarea">
+                                <textarea tabindex="1" class="form-control well well-sm ticket__replyText-input" rows="auto" cols="100%"
                                           id="comment" placeholder="Сообщение"></textarea>
 
                                 <div class="ticket__formWrapper">
@@ -263,7 +263,7 @@
                                             <div class=" mainContent__replyControl">
                                                 <div class="mainContent__replyControl-title"><i class="icon-user"></i><strong>Назначен</strong></div>
                                                 <div class="mainContent__replyControl-select">
-                                                    <select required class="form-control mainContent__control-select">
+                                                    <select tabindex="2" class="form-control mainContent__control-select">
                                                         <option value="0" class="mainContent__control-option">–</option>
                                                         <option value="1" class="mainContent__control-option">Нельсон "Башка" Бигетти</option>
                                                         <option value="2" class="mainContent__control-option">Эрлих</option>
@@ -277,13 +277,13 @@
                                             <div class="mainContent__replyControl">
                                                 <div class="mainContent__replyControl-title"><i class="icon-calendar"></i><strong>Срок выполнения</strong></div>
                                                 <div class="mainContent__replyControl-select">
-                                                    <input type="datetime-local" class="form-control mainContent__control-select">
+                                                    <input tabindex="3" type="datetime-local" class="form-control mainContent__control-select">
                                                 </div>
                                             </div>
                                             <div class="mainContent__replyControl">
                                                 <div class="mainContent__replyControl-title"><i class="icon-info"></i><strong>Статус</strong></div>
                                                 <div class="mainContent__replyControl-select">
-                                                    <select required class="form-control mainContent__control-select">
+                                                    <select tabindex="4" class="form-control mainContent__control-select">
                                                         <option value="0" class="mainContent__control-option">–</option>
                                                         <option selected value="1" class="mainContent__control-option">Новая</option>
                                                         <option value="2" class="mainContent__control-option">В работе</option>
@@ -294,11 +294,11 @@
                                             <div class="mainContent__replyControl">
                                                 <div class="mainContent__replyControl-title"><i class="icon-fire"></i><strong>Приоритет</strong></div>
                                                 <div class="mainContent__replyControl-select">
-                                                    <select required class="form-control mainContent__control-select">
+                                                    <select tabindex="4" class="form-control mainContent__control-select">
                                                         <option value="0" class="mainContent__control-option">–</option>
                                                         <option value="5" class="mainContent__control-option">Немедленный</option>
                                                         <option value="4" class="mainContent__control-option">Срочный</option>
-                                                        <option value="3" class="mainContent__control-option">Высокий</option>
+                                                        <option id="priorHeight" value="3" class="mainContent__control-option">Высокий</option>
                                                         <option selected value="2" class="mainContent__control-option">Нормальный</option>
                                                         <option value="1" class="mainContent__control-option">Низкий</option>
                                                     </select>
