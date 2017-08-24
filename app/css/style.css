@@ -760,6 +760,10 @@ input:-ms-input-placeholder {
   .login__form {
     margin-top: 10px; } }
 
+@media screen and (max-width: 700px) {
+  html {
+    position: fixed; } }
+
 .list__ticketListWrapper > div:last-of-type {
   border-bottom: 1px solid rgba(177, 169, 189, 0.3); }
 
