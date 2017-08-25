@@ -921,7 +921,7 @@ sup {
           align-items: center; }
 
 /*   Table   */
-.list__oneTicketHolder, .docs__singleWrapper {
+.list__oneTicketHolder, .docs__holder, .docs__singleWrapper {
   color: #555;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1133,7 +1133,7 @@ sup {
       -ms-flex-align: center;
           align-items: center; }
 
-.oneTicket__data {
+.oneTicket__data, .docs__data {
   width: 80px !important;
   margin: 0 15px;
   display: -webkit-box;
@@ -1148,13 +1148,13 @@ sup {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .oneTicket__data .icon-clock {
+  .oneTicket__data .icon-clock, .docs__data .icon-clock {
     color: #1f66a3;
     min-width: 23px;
     width: 23px !important;
     font-size: small; }
 
-.oneTicket__assigned {
+.oneTicket__assigned, .docs__author {
   width: 180px !important;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1169,7 +1169,7 @@ sup {
       -ms-flex-align: center;
           align-items: center;
   align-items: center; }
-  .oneTicket__assigned-name {
+  .oneTicket__assigned-name, .docs__author-name {
     text-align: end; }
 
 /*        PAGINATION       */
@@ -1899,29 +1899,10 @@ sup {
 
 .docs__allDocsWrapper {
   padding: 5px 0;
-  margin: 0 auto;
-  border-top: 1px solid lightgray; }
-
-.docs__holder {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .docs__holder > :first-child {
-    border: none; }
+  margin: 0 auto; }
+  .docs__allDocsWrapper i {
+    color: #444;
+    font-size: 18px; }
 
 .docs__singleWrapper {
   width: 100%;
@@ -1949,11 +1930,6 @@ sup {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
@@ -1961,20 +1937,18 @@ sup {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  align-items: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  width: 45%;
-  max-width: 45%;
-  position: relative; }
+  width: 30%;
+  max-width: 30%;
+  position: relative;
+  font-weight: 600; }
 
 .docs__fileName {
   max-width: 100%;
@@ -1982,16 +1956,39 @@ sup {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  color: #333;
+  font-size: 15px; }
 
 .docs__fileSize {
-  margin: 0; }
+  margin: 0;
+  font-size: 15px;
+  color: #333; }
+
+.docs__fileName:after {
+  width: 50%; }
 
 .docs__ticketCaption {
-  width: 50%; }
+  width: 250px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .docs__oneTicket__title:after {
   width: 90%; }
+
+.docs__data {
+  width: 130px !important; }
 
 .footer {
   width: 100%;
@@ -2016,7 +2013,7 @@ sup {
 @media screen and (min-width: 761px) {
   .header {
     height: 80px; }
-  .oneTicket__data {
+  .oneTicket__data, .docs__data {
     margin: 0 10px; } }
 
 /* =============== 760 =============== */
@@ -2025,7 +2022,7 @@ sup {
     font-size: 8px; }
   .header__right {
     width: 23%; }
-  .list__oneTicketHolder, .docs__singleWrapper {
+  .list__oneTicketHolder, .docs__holder, .docs__singleWrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2177,7 +2174,7 @@ sup {
             flex-wrap: nowrap; }
     .mainContent__replyControlWrapper > div {
       width: 100%; }
-  .list__oneTicketHolder, .docs__singleWrapper {
+  .list__oneTicketHolder, .docs__holder, .docs__singleWrapper {
     height: 130px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -2199,14 +2196,14 @@ sup {
             justify-content: flex-start; }
     .oneTicket__metaHolder .oneTicket__priority {
       margin: 0; }
-  .oneTicket__data {
+  .oneTicket__data, .docs__data {
     width: 100% !important;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0; }
-  .oneTicket__assigned {
+  .oneTicket__assigned, .docs__author {
     width: 100% !important; }
   .mainContent__replyControl-specialSpan {
     width: 191px; }
@@ -2244,7 +2241,7 @@ sup {
       margin: 5px auto; }
   .mainTitle {
     text-align: center; }
-  .list__oneTicketHolder, .docs__singleWrapper {
+  .list__oneTicketHolder, .docs__holder, .docs__singleWrapper {
     height: 120px; }
   .oneTicket__metaHolder {
     -webkit-box-pack: start;
@@ -2284,12 +2281,12 @@ sup {
     margin-left: -11px; }
   .oneTicket__priority {
     margin: 0 5px; }
-  .oneTicket__data {
+  .oneTicket__data, .docs__data {
     margin: 0 5px; } }
 
 /* =============== 400 =============== */
 @media screen and (max-width: 400px) {
-  .list__oneTicketHolder, .docs__singleWrapper {
+  .list__oneTicketHolder, .docs__holder, .docs__singleWrapper {
     height: 150px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -2326,14 +2323,14 @@ sup {
             justify-content: flex-start; }
     .oneTicket__metaHolder .oneTicket__priority {
       margin: 0; }
-  .oneTicket__data {
+  .oneTicket__data, .docs__data {
     width: 100% !important;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0; }
-  .oneTicket__assigned {
+  .oneTicket__assigned, .docs__author {
     width: 100% !important; }
   .ticket__recourseWrapper, .ticket__recourseWrapper-new {
     padding-left: 0;

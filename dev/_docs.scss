@@ -3,6 +3,9 @@
 .docs__fileSize {@extend .fileSize;}
 .docs__oneTicket__id {@extend .oneTicket__id;}
 .docs__oneTicket__title {@extend .oneTicket__title;}
+.docs__data {@extend .oneTicket__data}
+.docs__author {@extend .oneTicket__assigned}
+.docs__author-name {@extend .oneTicket__assigned-name}
 
 
 
@@ -10,14 +13,13 @@
 .docs__allDocsWrapper {
   padding: 5px 0;
   margin: 0 auto;
-  border-top: 1px solid lightgray;
+  i {
+    color: #444;
+    font-size: 18px;
+  }
 }
 .docs__holder {
-  margin: 0 auto;
-  @include columnFlex();
-  >:first-child {
-    border: none;
-  }
+  @extend .list__oneTicketHolder;
 }
 .docs__singleWrapper {
   @extend .list__oneTicketHolder;
@@ -27,30 +29,42 @@
   flex-wrap: wrap;
 }
 .docs__singleName {
-  @include columnFlex();
-  justify-content: flex-end;
-  align-items: flex-start;
+  @include rowFlex();
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  width: 45%;
-  max-width: 45%;
+  width: 30%;
+  max-width: 30%;
   position: relative;
+  font-weight: 600;
 }
 .docs__fileName {
   max-width: 100%;
   display: flex;
   overflow-x: hidden;
+  color: #333;
+  font-size: 15px;
 }
 .docs__fileSize {
   margin: 0;
+  font-size: 15px;
+  color: #333;
 }
 .docs__fileName:after {
   @extend .oneTicket__title:after;
+  width: 50%;
 }
 
 .docs__ticketCaption {
   @extend .oneTicket__caption;
-  width: 50%;
+  width: 250px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .docs__oneTicket__title:after {
   width: 90%;
+}
+.docs__data {
+  width: 130px !important;
 }
