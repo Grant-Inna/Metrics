@@ -59,7 +59,8 @@ body, html {
 .mainWrapper-header {
   height: 50px;
   margin-bottom: 15px;
-  @include rowFlex( $j-c: space-between )
+  @include rowFlex( $j-c: space-between );
+  padding: 0;
 }
 .main_avatar {
   @include iconsProp( $border-width: none );

@@ -15,7 +15,7 @@
     color: #2e6da4;
   }
   sup {
-    top: 0;
+    top: -3px;
     right: -20px;
   }
 }
@@ -161,7 +161,7 @@
 
 .ticket__formWrapper {
   @include columnFlex();
-  margin: 15px 0 10px;
+  margin: 20px 0 10px;
 }
 .ticket__formButtons {
   @include rowFlex();
