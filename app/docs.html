@@ -11,6 +11,8 @@
     <link href="./img/favicon.png" rel="shortcut icon" title="Favicon">
     <script src="./bootstrap/dist/js/jquery.min.js" type="text/javascript"></script>
     <script src="./bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/specialScript.js" type="text/javascript"></script>
+    <script src="js/autosize.min.js" type="text/javascript"></script>
 
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/fonts.css" rel="stylesheet">
@@ -25,13 +27,14 @@
             <a class="header__navBack" title="Вернуться к списку задач" href="ticketList.html">
                 <i class="icons material-icons">home</i>
             </a>
-            <a href="allTickets.html" class="header__navTickets">Тикеты</a>
-            <a href="#" class="header__navDocs active">Документы</a>
-            <a href="#" class="header__navFAQ">FAQ</a>
+            <a href="allTickets.html" class="header__nav-tickets">Тикеты</a>
+            <a href="#" class="header__nav-docs active">Документы</a>
+            <a href="#" class="header__nav-FAQ">FAQ</a>
         </div>
         <div class="header__right">
             <div class="header__user">
-                <div class="header__name">Гилфойл</div>
+                <div class="header__name">Гилфойл
+                    <sup class="required">1</sup></div>
                 <div class="header__avatar">
                     <img src="img/gilfoil.jpg" alt="">
                 </div>
@@ -40,10 +43,153 @@
                 <i class="icon-logout"></i>
             </a>
         </div>
+
+        <div class="header__self col-xs-12 col-sm-5 col-lg-4">
+            <div class="header__search"><i class="icon-magnifier"></i></div>
+            <div class="header__message fourth">
+                <div class="header__notice">
+                    <div class="header__notice-icon hoverMainPanel"><i class="icon-bell front"></i><span
+                            notice-count="42" class="header__notice-count back">42</span></div>
+                </div>
+                <div class="header__mail">
+                    <div class="header__mail-icon hoverMainPanel"><i class="icon-envelope-open front"></i><span
+                            mail-count="8" class="header__mail-count back">8</span></div>
+                </div>
+                <div class="header__calendar">
+                    <div class="header__calendar-icon hoverMainPanel"><i class="icon-calendar front"></i><span
+                            calendar-count="0" class="header__calendar-count back">0</span></div>
+                </div>
+            </div>
+            <div class="header__self col-xs-12 col-sm-5 col-lg-4">
+                <div class="header__user">
+                    <div class="header__name">Гилфойл</div>
+                    <div class="header__avatar">
+                        <img src="img/gilfoil.jpg" alt="">
+                    </div>
+                </div>
+                <div class="header__out">
+                    <a href="login.html">
+                        <i class="icon-logout"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
+
     <div class="container-fluid container-fluid-main">
         <div class="col-lg-9 col-md-10 col-sm-11 col-xs-12 mainWrapper-ticket">
-            <div class="col-xs-12 mainWrapper-header">
+            <div class="col-lg-11 col-md-10 col-sm-11 col-xs-12">
+                <div class="mainWrapper-header">
+                    <nav class="menu-new col-sm-10 col-xs-12">
+                        <h4 class="menu__createCaption">Архив документов</h4>
+                    </nav>
+                </div>
+
+                <div class="docs__allDocsWrapper">
+                    <div class="docs__holder col-sm-11 col-xs-12">
+                        <div class="docs__singleWrapper">
+                            <a class="docs__ticketCaption" href="ticket.html">
+                                <div class="oneTicket__id">#100500</div>
+                                <div class="oneTicket__title">И тут много много букв
+                                </div>
+                            </a>
+                            <div class="docs__status">
+                                <div class="oneTicket__label-status label-primary"></div>
+                            </div>
+                            <div class="docs__singleName">
+                                <div class="docs__fileName">многомногобуквмногомногобуквмногомногобуквмногомногобукв</div>
+                                <div class="docs__fileSize">.бе-бе</div>
+                            </div>
+                        </div>
+                        <div class="docs__singleWrapper">
+                            <a class="docs__ticketCaption" href="ticket.html">
+                                <div class="docs__oneTicket__id">#100500</div>
+                                <div class="docs__oneTicket__title">И тут много много букв
+                                </div>
+                            </a>
+                            <div class="oneTicket__status">
+                                <div class="oneTicket__label-status label-primary"></div>
+                            </div>
+                            <div class="docs__singleName">
+                                <div class="fileName">многомногобукв</div>
+                                <div class="fileSize">.бе-бе</div>
+                            </div>
+                        </div>
+                        <div class="docs__singleWrapper">
+
+                            <a class="docs__ticketCaption" href="ticket.html">
+                                <div class="docs__oneTicket__id">#100500</div>
+                                <div class="docs__oneTicket__title">Сюда смотри. Сюда. Сюда. Сюда. Сюда. Сюда. Сюда. Сюда. Сюда. Сюда. Сюда.
+                                </div>
+                            </a>
+                            <div class="docs__status">
+                                <div class="oneTicket__label-status label-primary"></div>
+                            </div>
+                            <div class="docs__singleName">
+                                <div class="docs__fileName">многомногобуквмногомногобуквмногомногобуквмногомногобукв
+                                </div>
+                                <div class="docs__fileSize">.бе-бе</div>
+
+                            </div>
+                        </div>
+                        <div class="docs__singleWrapper">
+                            <a class="docs__ticketCaption" href="ticket.html">
+                                <div class="oneTicket__id">#100500</div>
+                                <div class="oneTicket__title">И тут много много букв
+                                </div>
+                            </a>
+                            <div class="docs__status">
+                                <div class="oneTicket__label-status label-primary"></div>
+                            </div>
+                            <div class="docs__singleName">
+                                <div class="docs__fileName">многомногобуквмногомногобуквмногомногобуквмногомногобукв</div>
+                                <div class="docs__fileSize">.бе-бе</div>
+                            </div>
+                        </div>
+                        <div class="docs__singleWrapper">
+                            <a class="docs__ticketCaption" href="ticket.html">
+                                <div class="docs__oneTicket__id">#100500</div>
+                                <div class="docs__oneTicket__title">И тут много много букв
+                                </div>
+                            </a>
+                            <div class="oneTicket__status">
+                                <div class="oneTicket__label-status label-primary"></div>
+                            </div>
+                            <div class="docs__singleName">
+                                <div class="fileName">многомногобукв</div>
+                                <div class="fileSize">.бе-бе</div>
+                            </div>
+                        </div>
+                        <div class="docs__singleWrapper">
+                            <a class="docs__ticketCaption" href="ticket.html">
+                                <div class="oneTicket__id">#100500</div>
+                                <div class="oneTicket__title">И тут много много букв
+                                </div>
+                            </a>
+                            <div class="docs__status">
+                                <div class="oneTicket__label-status label-primary"></div>
+                            </div>
+                            <div class="docs__singleName">
+                                <div class="docs__fileName">многомногобуквмногомногобуквмногомногобуквмногомногобукв</div>
+                                <div class="docs__fileSize">.бе-бе</div>
+                            </div>
+                        </div>
+                        <div class="docs__singleWrapper">
+                            <a class="docs__ticketCaption" href="ticket.html">
+                                <div class="docs__oneTicket__id">#100500</div>
+                                <div class="docs__oneTicket__title">И тут много много букв
+                                </div>
+                            </a>
+                            <div class="oneTicket__status">
+                                <div class="oneTicket__label-status label-primary"></div>
+                            </div>
+                            <div class="docs__singleName">
+                                <div class="fileName">многомногобукв</div>
+                                <div class="fileSize">.бе-бе</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

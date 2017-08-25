@@ -1,0 +1,56 @@
+.docs__status {@extend .oneTicket__status;}
+.docs__fileName {@extend .fileName;}
+.docs__fileSize {@extend .fileSize;}
+.docs__oneTicket__id {@extend .oneTicket__id;}
+.docs__oneTicket__title {@extend .oneTicket__title;}
+
+
+
+
+.docs__allDocsWrapper {
+  padding: 5px 0;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+}
+.docs__holder {
+  margin: 0 auto;
+  @include columnFlex();
+  >:first-child {
+    border: none;
+  }
+}
+.docs__singleWrapper {
+  @extend .list__oneTicketHolder;
+  width: 100%;
+  @include rowFlex();
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.docs__singleName {
+  @include columnFlex();
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 45%;
+  max-width: 45%;
+  position: relative;
+}
+.docs__fileName {
+  max-width: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
+.docs__fileSize {
+  margin: 0;
+}
+.docs__fileName:after {
+  @extend .oneTicket__title:after;
+}
+
+.docs__ticketCaption {
+  @extend .oneTicket__caption;
+  width: 50%;
+}
+.docs__oneTicket__title:after {
+  width: 90%;
+}

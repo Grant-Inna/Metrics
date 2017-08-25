@@ -24,8 +24,10 @@
             <div class="header__logo"></div>
         </div>
         <div class="header__nav">
-            <a href="allTickets.html" class="header__navTickets">Тикеты
-                <sup class="required">10</sup></a>
+            <a class="header__navBack" title="Вернуться к списку задач" href="ticketList.html">
+                <i class="icons material-icons">home</i>
+            </a>
+            <a href="allTickets.html" class="header__navTickets active">Тикеты</a>
             <a href="docs.html" class="header__navDocs">Документы</a>
             <a href="#" class="header__navFAQ">FAQ</a>
         </div>
@@ -46,13 +48,16 @@
             <div class="header__search"><i class="icon-magnifier"></i></div>
             <div class="header__message fourth">
                 <div class="header__notice">
-                    <div class="header__notice-icon hoverMainPanel"><i class="icon-bell front"></i><span notice-count="42" class="header__notice-count back">42</span></div>
+                    <div class="header__notice-icon hoverMainPanel"><i class="icon-bell front"></i><span
+                            notice-count="42" class="header__notice-count back">42</span></div>
                 </div>
                 <div class="header__mail">
-                    <div class="header__mail-icon hoverMainPanel"><i class="icon-envelope-open front"></i><span mail-count="8" class="header__mail-count back">8</span></div>
+                    <div class="header__mail-icon hoverMainPanel"><i class="icon-envelope-open front"></i><span
+                            mail-count="8" class="header__mail-count back">8</span></div>
                 </div>
                 <div class="header__calendar">
-                    <div class="header__calendar-icon hoverMainPanel"><i class="icon-calendar front"></i><span calendar-count="0" class="header__calendar-count back">0</span></div>
+                    <div class="header__calendar-icon hoverMainPanel"><i class="icon-calendar front"></i><span
+                            calendar-count="0" class="header__calendar-count back">0</span></div>
                 </div>
             </div>
             <div class="header__self col-xs-12 col-sm-5 col-lg-4">
@@ -81,58 +86,75 @@
                 </div>
                 <div class="ticket__replyHolder">
                     <div class="ticket__recourseWrapper-new">
-                    <div class="ticket__replyTextWrapper col-sm-10 col-xs-12">
-                        <form class=" form-group ticket__replyTextarea">
-                            <textarea tabindex="1" class="form-control well well-sm ticket__replyText-titleInput" rows="1" cols="100%"
+                        <div class="ticket__replyTextWrapper col-sm-10 col-xs-12">
+                            <form class=" form-group ticket__replyTextarea">
+                            <textarea tabindex="1" class="form-control well well-sm ticket__replyText-titleInput"
+                                      rows="1" cols="100%"
                                       id="newTicketTitle" placeholder="Тема обращения"></textarea>
-                            <textarea tabindex="2" class="form-control well well-sm ticket__replyText-input-new" rows="auto" cols="100%"
+                            <textarea tabindex="2" class="form-control well well-sm ticket__replyText-input-new"
+                                      rows="auto" cols="100%"
                                       id="comment" placeholder="Сообщение"></textarea>
 
-                            <div class="ticket__formWrapper">
-                                <div class="ticket__formButtons">
-                                    <button tabindex="4" type="button" class="btn btn-link ticket__formOption" data-toggle="collapse" data-target="#collapse">
-                                        <i id="formArrow" class="icons material-icons">keyboard_arrow_down</i>
-                                        <span>Дополнительно</span>
-                                    </button>
-                                    <button tabindex="3" class="btn btn-primary ticket__formBtn">
-                                        <i class="icon-paper-plane"></i>
-                                        <span>Отправить</span>
-                                    </button>
-                                </div>
-                                <div class="ticket__controlBtnContainer-new">
-                                    <div id="collapse" class="form-group collapse mainContent__replyControlWrapper">
-                                        <div class="mainContent__replyControl">
-                                            <div class="mainContent__replyControl-title"><i class="icon-fire"></i><strong>Приоритет</strong></div>
-                                            <div class="mainContent__replyControl-select">
-                                                <select tabindex="5" class="form-control mainContent__control-select">
-                                                    <option value="0" class="mainContent__control-option">–</option>
-                                                    <option value="5" class="mainContent__control-option">Немедленный</option>
-                                                    <option value="4" class="mainContent__control-option">Срочный</option>
-                                                    <option id="priorHeight" value="3" class="mainContent__control-option">Высокий</option>
-                                                    <option selected value="2" class="mainContent__control-option">Нормальный</option>
-                                                    <option value="1" class="mainContent__control-option">Низкий</option>
-                                                </select>
+                                <div class="ticket__formWrapper">
+                                    <div class="ticket__formButtons">
+                                        <button tabindex="4" type="button" class="btn btn-link ticket__formOption"
+                                                data-toggle="collapse" data-target="#collapse">
+                                            <i id="formArrow" class="icons material-icons">keyboard_arrow_down</i>
+                                            <span>Дополнительно</span>
+                                        </button>
+                                        <button tabindex="3" class="btn btn-primary ticket__formBtn">
+                                            <i class="icon-paper-plane"></i>
+                                            <span>Отправить</span>
+                                        </button>
+                                    </div>
+                                    <div class="ticket__controlBtnContainer-new">
+                                        <div id="collapse" class="form-group collapse mainContent__replyControlWrapper">
+                                            <div class="mainContent__replyControl">
+                                                <div class="mainContent__replyControl-title"><i
+                                                        class="icon-fire"></i><strong>Приоритет</strong></div>
+                                                <div class="mainContent__replyControl-select">
+                                                    <select tabindex="5"
+                                                            class="form-control mainContent__control-select">
+                                                        <option value="0" class="mainContent__control-option">–</option>
+                                                        <option value="5" class="mainContent__control-option">
+                                                            Немедленный
+                                                        </option>
+                                                        <option value="4" class="mainContent__control-option">Срочный
+                                                        </option>
+                                                        <option id="priorHeight" value="3"
+                                                                class="mainContent__control-option">Высокий
+                                                        </option>
+                                                        <option selected value="2" class="mainContent__control-option">
+                                                            Нормальный
+                                                        </option>
+                                                        <option value="1" class="mainContent__control-option">Низкий
+                                                        </option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class=" mainContent__replyControl mainContent__addFiles-new">
-                                            <div class="mainContent__replyControl-title"><i class="icon-paper-clip"></i><strong>Добавить файлы</strong></div>
-                                            <div class="mainContent__replyControl-selectFiles">
-                                                <label tabindex="6" for="uploadFile" class="mainContent__replyControl-specialLabel form-control btn btn-primary">
+                                            <div class=" mainContent__replyControl mainContent__addFiles-new">
+                                                <div class="mainContent__replyControl-title"><i
+                                                        class="icon-paper-clip"></i><strong>Добавить файлы</strong>
+                                                </div>
+                                                <div class="mainContent__replyControl-selectFiles">
+                                                    <label tabindex="6" for="uploadFile"
+                                                           class="mainContent__replyControl-specialLabel form-control btn btn-primary">
                                                             <span class="mainContent__replyControl-specialSpan btn-primary">
                                                                 <i class="icon-arrow-up"></i> Выберите файл
                                                             </span>
-                                                    <input id="uploadFile" onchange="myFunction()" name="uploadFile" type="file" multiple class="mainContent__replyControl-inputFiles">
-                                                </label>
+                                                        <input id="uploadFile" onchange="myFunction()" name="uploadFile"
+                                                               type="file" multiple
+                                                               class="mainContent__replyControl-inputFiles">
+                                                    </label>
+                                                </div>
                                             </div>
+                                            <div id="files" class="uploadedFiles__holder"></div>
                                         </div>
-                                        <div id="files" class="uploadedFiles__holder"></div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
