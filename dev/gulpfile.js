@@ -17,6 +17,7 @@ gulp.task('watch_scss', function() {
     gulp.watch('./_login.scss', ['css']);
     gulp.watch('./_ticketList.scss', ['css']);
     gulp.watch('./_ticket.scss', ['css']);
+    gulp.watch('./_createTicket.scss', ['css']);
 });
 
 gulp.task('default', ['css', 'watch_scss']);

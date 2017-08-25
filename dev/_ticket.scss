@@ -9,9 +9,14 @@
 }
 .ticket__userMeta {
   @include rowFlex();
+  position: relative;
   margin-right: 30px;
   &-name {
-  color: #2e6da4;
+    color: #2e6da4;
+  }
+  sup {
+    top: 0;
+    right: -20px;
   }
 }
 .main_avatar-ticketAvatar {
@@ -168,7 +173,8 @@
 }
 .ticket__formOption {
   @include rowFlex();
-  padding: 0 15px 0 3px;
+  padding: 0 15px 0 0;
+  margin-left: -8px;
   .icon-star {
     color: #777;
   }
@@ -293,6 +299,7 @@
 
 .uploadedFiles__holder {
   padding: 10px 0 0 10px;
+  width: 100%;
 }
 .uploadedFiles__oneFileHolder {
   display: flex;
@@ -397,7 +404,7 @@
 }
 
 #formArrow {
-  transition: all .7s;
+  @include transition;
 }
 .spinMe {
   transition: all .7s;

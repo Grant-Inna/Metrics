@@ -9,7 +9,7 @@ body, html {
   overflow-x: hidden;
   min-height: 100%;
   height: auto;
-  font-family: 'Roboto regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #e7ebef;
 }
 .row {
@@ -154,12 +154,34 @@ button {
   }
 }
 
+/*       OPTIONAL      */
+.disabled {
+  color: #ccc;
+}
+.required {
+  height: 22px;
+  width: 22px;
+  @include centerFlex;
+  color: #fff;
+  font-size: 90%;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #d9534f;
+  z-index: 100;
+}
+sup {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 
 @import "header";
 @import "login";
 @import "ticketList";
 @import "ticket";
+@import "createTicket";
 @import "docs";
 @import "allTickets";
 

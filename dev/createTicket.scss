@@ -1,0 +1,17 @@
+.ticket__replyText-titleInput {
+  @extend .ticket__replyText-input;
+  margin-bottom: 20px;
+}
+.ticket__recourseWrapper-new {
+  @extend .ticket__recourseWrapper;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-bottom: none;
+}
+.ticket__controlBtnContainer-new {
+  @extend .ticket__controlBtnContainer;
+  min-height: 120px;
+}
+.mainContent__addFiles-new {
+  width: 45%;
+}

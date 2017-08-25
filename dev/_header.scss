@@ -58,9 +58,15 @@
     height: 30px;
     padding: 10px 15px;
     margin: 0 2px;
+    font-weight: 600;
     @include transition;
     @include centerFlex;
+    position: relative;
     border-radius: 2px;
+    > sup {
+      top: -10px;
+      left: -5px;
+    }
   }
   > a:hover {
     background-color: #f8f8ff;
@@ -75,6 +81,7 @@
   height: 45px;
   //min-width: 200px;
   > div {
+    font-weight: 600;
   }
 }
 
@@ -137,10 +144,16 @@
 .header__user {
   @include rowFlex();
   height: auto;
+  width: auto;
   margin-right: 10px;
 }
 .header__name {
   text-transform: capitalize;
+  position: relative;
+  sup {
+    top: -15px;
+    left: -20px;
+  }
 }
 .header__avatar {
   width: 45px;
