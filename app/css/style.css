@@ -1885,6 +1885,7 @@ sup {
 .ticket__recourseWrapper-new {
   margin: 0 auto;
   padding-top: 30px;
+  padding-bottom: 0;
   border-bottom: none; }
 
 .ticket__replyText-input-new {
