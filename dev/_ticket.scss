@@ -12,7 +12,6 @@
   margin-right: 30px;
   &-name {
   color: #2e6da4;
-    font-weight: 600;
   }
 }
 .main_avatar-ticketAvatar {
@@ -83,7 +82,6 @@
   @include rowFlex( $j-c: flex-start );
 }
 .ticket__recourseTitle {
-  font-weight: 600;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }

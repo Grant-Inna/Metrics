@@ -394,7 +394,6 @@ button {
     height: 30px;
     padding: 10px 15px;
     margin: 0 2px;
-    font-weight: 600;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
@@ -435,8 +434,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   height: 45px; }
-  .header__right > div {
-    font-weight: 600; }
 
 .header__navBack {
   width: auto;
@@ -1003,7 +1000,6 @@ input:-ms-input-placeholder {
   text-decoration: none; }
 
 .oneTicket__title {
-  font-weight: 600;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1017,7 +1013,6 @@ input:-ms-input-placeholder {
 
 .oneTicket__caption-down {
   max-height: 100%;
-  height: 95%;
   margin-top: 3px;
   overflow: hidden;
   position: relative;
@@ -1211,8 +1206,7 @@ sup {
           align-items: center;
   margin-right: 30px; }
   .ticket__userMeta-name {
-    color: #2e6da4;
-    font-weight: 600; }
+    color: #2e6da4; }
 
 .main_avatar-ticketAvatar {
   margin: 0;
@@ -1350,7 +1344,6 @@ sup {
           align-items: center; }
 
 .ticket__recourseTitle {
-  font-weight: 600;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
 
