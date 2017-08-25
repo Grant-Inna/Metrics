@@ -164,6 +164,9 @@
   @include rowFlex();
   width: 100%;
   justify-content: space-between;
+  > button {
+    font-weight: 500;
+  }
 }
 .ticket__formOption {
   @include rowFlex();
@@ -298,7 +301,7 @@
 }
 .uploadedFiles__oneFile {
   color: #23527c;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 13px;
   display: flex;
   justify-content: space-between;

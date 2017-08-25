@@ -253,12 +253,12 @@ body, html {
           align-items: center; }
   .menuLink > i, .header__navBack > i {
     color: #23527c;
-    font-weight: 600;
-    font-size: 15px; }
+    font-weight: 500;
+    font-size: 23px; }
 
 button {
   text-transform: uppercase;
-  font-weight: 600 !important; }
+  font-weight: 500; }
 
 .col-xs-12 {
   float: none; }
@@ -442,7 +442,8 @@ button {
   width: auto;
   padding: 0 0 2px !important; }
   .header__navBack i {
-    color: #333; }
+    color: #333;
+    font-size: 15px; }
 
 .active {
   color: #23527c !important; }
@@ -1496,6 +1497,8 @@ sup {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .ticket__formButtons > button {
+    font-weight: 500; }
 
 .ticket__formOption {
   display: -webkit-box;
@@ -1711,7 +1714,7 @@ sup {
 
 .uploadedFiles__oneFile, .uploadedFiles__oneFile-total {
   color: #23527c;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 13px;
   display: -webkit-box;
   display: -webkit-flex;
