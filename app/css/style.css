@@ -471,7 +471,8 @@ sup {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 45px; }
+  height: 45px;
+  margin-right: 10px; }
   .header__right > div {
     font-weight: 600; }
 
@@ -571,7 +572,7 @@ sup {
           align-items: center;
   height: auto;
   width: auto;
-  margin-right: 10px; }
+  margin-right: 15px; }
 
 .header__name {
   text-transform: capitalize;
@@ -828,6 +829,8 @@ sup {
   border-radius: 3px; }
   .list__controlBtn-addBtn:hover {
     text-decoration: none; }
+  .list__controlBtn-search {
+    width: 100%; }
 
 .list__addBtn {
   display: -webkit-box;
@@ -875,7 +878,9 @@ sup {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  min-width: 40%;
+  width: auto; }
 
 .controlBtn__filter-label {
   margin-bottom: 0; }
@@ -1915,7 +1920,7 @@ sup {
   html {
     font-size: 8px; }
   .header__right {
-    width: 30%; }
+    width: 23%; }
   .list__oneTicketHolder {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1963,6 +1968,7 @@ sup {
   .mainWrapper, .mainWrapper-ticket, .mainWrapper-ticket, .mainWrapper-ticket {
     margin-top: 90px; }
   .header__nav {
+    margin-left: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1980,7 +1986,7 @@ sup {
       padding: 5px 15px;
       margin: 1px; }
   .header__right {
-    width: 35%; }
+    width: 29%; }
   .ticket__replyHolder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2010,11 +2016,7 @@ sup {
   .header__info {
     width: 100%; }
   .header__right {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 45%; }
+    width: 35%; }
   .header__user {
     margin-right: 20px; }
   .list__controlBtnHolder {
@@ -2034,6 +2036,8 @@ sup {
             align-items: flex-start; }
   .list__controlBtn-searchHolder {
     padding-left: 0 !important; }
+  .list__controlBtn-searchHolder {
+    width: 100%; }
   .oneTicketMeta-right {
     width: 100%; }
   .mainWrapper-header {
@@ -2055,8 +2059,9 @@ sup {
     margin-left: -10px; }
   .ticket__controlBtnContainer, .ticket__controlBtnContainer-new {
     min-height: 390px; }
+  .ticket__controlBtnContainer-new {
+    min-height: 200px; }
   .mainContent__replyControlWrapper {
-    min-height: 355px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -2100,7 +2105,11 @@ sup {
   .oneTicket__assigned {
     width: 100% !important; }
   .mainContent__replyControl-specialSpan {
-    width: 191px; } }
+    width: 191px; }
+  .required {
+    font-size: 10px;
+    height: 20px;
+    width: 20px; } }
 
 /* =============== 440 =============== */
 @media screen and (max-width: 440px) {

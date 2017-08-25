@@ -12,6 +12,9 @@
   &-addBtn:hover {
     text-decoration: none;
   }
+  &-search {
+    width: 100%;
+  }
 }
 .list__addBtn {
   @include rowFlex( $j-c: space-between );
@@ -25,6 +28,8 @@
   @include rowFlex( $j-c: flex-end );
   padding: 5px 0;
   margin-bottom: 0;
+  min-width: 40%;
+  width: auto;
   > div {
   }
 }

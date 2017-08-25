@@ -16,7 +16,7 @@ $height__controlBtnContainer: 355px;
     font-size: 8px;
   }
   .header__right {
-    width: 30%;
+    width: 23%;
   }
   .list__oneTicketHolder {
     @include columnFlex();
@@ -54,6 +54,7 @@ $height__controlBtnContainer: 355px;
     margin-top: 90px;
   }
   .header__nav {
+    margin-left: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,7 +64,7 @@ $height__controlBtnContainer: 355px;
     }
   }
   .header__right {
-    width: 35%;
+    width: 29%;
   }
 
 
@@ -103,8 +104,7 @@ $height__controlBtnContainer: 355px;
     width: 100%;
   }
   .header__right {
-    justify-content: flex-start;
-    width: 45%;
+    width: 35%;
   }
   .header__user {
     margin-right: 20px;
@@ -117,6 +117,9 @@ $height__controlBtnContainer: 355px;
   }
   .list__controlBtn-searchHolder {
     padding-left: 0 !important;
+  }
+  .list__controlBtn-searchHolder {
+    width: 100%;
   }
   .oneTicketMeta-right {
     width: 100%;
@@ -134,8 +137,10 @@ $height__controlBtnContainer: 355px;
   .ticket__controlBtnContainer {
     min-height: 390px;
   }
+  .ticket__controlBtnContainer-new {
+    min-height: 200px;
+  }
   .mainContent__replyControlWrapper {
-    min-height: $height__controlBtnContainer;
     flex-direction: column;
     margin-bottom: 15px;
     flex-wrap: nowrap;
@@ -174,6 +179,11 @@ $height__controlBtnContainer: 355px;
     width: 191px;
   }
 
+  .required {
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+  }
 }
 
 

@@ -14,6 +14,7 @@ $(function(){
     });
 
     autosize( $( 'textarea' ) );
+    autosize( $( 'input[type=search]' ) );
 
 });
 
