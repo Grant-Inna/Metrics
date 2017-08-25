@@ -1,3 +1,7 @@
+.menu-new, .menu__createCaption {
+  margin: 0 auto;
+  text-align: center;
+}
 .ticket__replyText-titleInput {
   @extend .ticket__replyText-input;
   margin-bottom: 20px;
@@ -7,6 +11,10 @@
   margin: 0 auto;
   padding-top: 30px;
   border-bottom: none;
+}
+.ticket__replyText-input-new {
+  @extend .ticket__replyText-input;
+  min-height: 150px;
 }
 .ticket__controlBtnContainer-new {
   @extend .ticket__controlBtnContainer;

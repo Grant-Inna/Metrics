@@ -73,26 +73,11 @@
 
     <div class="container-fluid container-fluid-main">
         <div class="col-lg-8 col-md-10 col-sm-11 col-xs-12 mainWrapper-ticket">
-            <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12">
-                <div class="col-xs-12 mainWrapper-header">
-                    <nav class="menu">
-                        <a class="menuLink btn btn-sm btn-default" href="ticketList.html">
-                            <i class="icons material-icons">keyboard_arrow_left</i>
-                            <span>К списку тикетов</span>
-                        </a>
+            <div class="col-lg-10 col-md-10 col-sm-11 col-xs-12">
+                <div class="mainWrapper-header">
+                    <nav class="menu-new col-sm-10 col-xs-12">
+                        <h4 class="menu__createCaption">Открыть тикет в службу поддержки</h4>
                     </nav>
-                    <div class="ticket__userMetaWrapper">
-                        <div class="ticket__userMeta">
-                            <div class="main_avatar-ticketAvatar">
-                                <img src="img/gilfoil.jpg" alt="" class="main_avatar-image img-responsive">
-                            </div>
-                            <div class="ticket__userMeta-name">Гилфойл</div>
-                        </div>
-                        <div class="ticket__meta-date">
-                            <i class="icon-calendar"></i>
-                            <span>25 Января</span>
-                        </div>
-                    </div>
                 </div>
                 <div class="ticket__replyHolder">
                     <div class="ticket__recourseWrapper-new">
@@ -100,7 +85,7 @@
                         <form class=" form-group ticket__replyTextarea">
                             <textarea tabindex="1" class="form-control well well-sm ticket__replyText-titleInput" rows="1" cols="100%"
                                       id="newTicketTitle" placeholder="Тема обращения"></textarea>
-                            <textarea tabindex="2" class="form-control well well-sm ticket__replyText-input" rows="auto" cols="100%"
+                            <textarea tabindex="2" class="form-control well well-sm ticket__replyText-input-new" rows="auto" cols="100%"
                                       id="comment" placeholder="Сообщение"></textarea>
 
                             <div class="ticket__formWrapper">
@@ -111,7 +96,7 @@
                                     </button>
                                     <button tabindex="3" class="btn btn-primary ticket__formBtn">
                                         <i class="icon-paper-plane"></i>
-                                        <span>Ответить</span>
+                                        <span>Отправить</span>
                                     </button>
                                 </div>
                                 <div class="ticket__controlBtnContainer-new">

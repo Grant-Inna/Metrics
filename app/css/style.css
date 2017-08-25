@@ -1375,7 +1375,7 @@ sup {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0; }
 
-.ticket__recourseText, .ticket__replyText, .ticket__replyText-text, .ticket__replyText-input, .ticket__replyText-titleInput {
+.ticket__recourseText, .ticket__replyText, .ticket__replyText-text, .ticket__replyText-input, .ticket__replyText-titleInput, .ticket__replyText-input-new {
   font-weight: 400;
   font-size: 97%;
   color: #777; }
@@ -1475,7 +1475,7 @@ sup {
   margin-bottom: 0;
   width: 100%; }
 
-.ticket__replyText-input, .ticket__replyText-titleInput {
+.ticket__replyText-input, .ticket__replyText-titleInput, .ticket__replyText-input-new {
   max-width: 100% !important;
   width: 100%;
   margin: 0px -4px 0 0;
@@ -1875,6 +1875,10 @@ sup {
       -ms-transform: rotate(180deg);
           transform: rotateZ(180deg); }
 
+.menu-new, .menu__createCaption {
+  margin: 0 auto;
+  text-align: center; }
+
 .ticket__replyText-titleInput {
   margin-bottom: 20px; }
 
@@ -1882,6 +1886,9 @@ sup {
   margin: 0 auto;
   padding-top: 30px;
   border-bottom: none; }
+
+.ticket__replyText-input-new {
+  min-height: 150px; }
 
 .ticket__controlBtnContainer-new {
   min-height: 120px; }
@@ -1995,7 +2002,7 @@ sup {
             flex-direction: column; }
   .ticket__replyHolder:last-child .ticket__replyAvatarWrapper {
     display: none; }
-  .ticket__replyText-input, .ticket__replyText-titleInput {
+  .ticket__replyText-input, .ticket__replyText-titleInput, .ticket__replyText-input-new {
     width: 100%; }
   .ticket__replyFiles {
     padding: 10px 10px 0; } }
