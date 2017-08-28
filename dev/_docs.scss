@@ -16,6 +16,7 @@
   i {
     color: #444;
     font-size: 18px;
+    @include transition;
   }
 }
 .docs__holder {
@@ -37,6 +38,14 @@
   max-width: 30%;
   position: relative;
   font-weight: 600;
+  &:hover i {
+    color: #2c5d88;
+    @include transition;
+  }
+  &:hover .docs__fileName {
+    color: #337ab7;
+    @include transition;
+  }
 }
 .docs__fileName {
   max-width: 100%;
@@ -44,11 +53,12 @@
   overflow-x: hidden;
   color: #333;
   font-size: 15px;
+  margin-right: 5px;
 }
 .docs__fileSize {
   margin: 0;
-  font-size: 15px;
-  color: #333;
+  font-size: 13px;
+  color: #555;
 }
 .docs__fileName:after {
   @extend .oneTicket__title:after;
