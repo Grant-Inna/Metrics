@@ -75,8 +75,8 @@
   > a:hover {
     background-color: #f8f8ff;
     text-decoration: none;
-    background-color: rgba(35, 82, 124, 0.2);
-    box-shadow: 0 0 2px 1px rgba(35, 82, 124, 0.1);
+    background-color: rgba(131, 141, 150, 0.2);
+    box-shadow: 0 0 2px 1px rgba(191, 201, 210, 0.3);
     @include transition;
   }
 }
@@ -125,8 +125,8 @@
 }
 .header__out:hover i {
   border-radius: 25px;
-  background-color: rgba(35, 82, 124, 0.2);
-  box-shadow: 0 0 2px 1px rgba(35, 82, 124, 0.1);
+  background-color: rgba(131, 141, 150, 0.2);
+  box-shadow: 0 0 2px 1px rgba(191, 201, 210, 0.3);
   @include transition;
   &:hover .icon-logout {
     color: $color_hoverBorder;
