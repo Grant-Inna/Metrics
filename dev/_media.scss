@@ -96,7 +96,7 @@ $height__controlBtnContainer: 355px;
     margin-top: 80px;
     padding-top: 20px;
   }
-  .header {
+  .header__wrapper {
     flex-wrap: wrap;
     padding-top: 5px;
   }
@@ -104,7 +104,7 @@ $height__controlBtnContainer: 355px;
     width: 100%;
   }
   .header__right {
-    width: 35%;
+    width: auto;
   }
   .header__user {
     margin-right: 20px;
@@ -195,7 +195,7 @@ $height__controlBtnContainer: 355px;
   }
   .mainWrapper, .mainWrapper-ticket {
   }
-  .header {
+  .header__wrapper {
     flex-direction: column;
     align-items: center;
     > div {

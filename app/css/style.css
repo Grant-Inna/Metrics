@@ -321,6 +321,24 @@ sup {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -328,12 +346,13 @@ sup {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding: 0; }
 
 .header__info {
   height: 50px !important;
   width: 180px;
-  margin: 1% 0 1% 15px;
+  margin: 1% 0;
   padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -419,13 +438,14 @@ sup {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  height: 60px; }
   .header__nav > a {
     width: auto;
     cursor: pointer;
     color: #333;
-    height: 30px;
-    padding: 10px 15px;
+    height: 100%;
+    padding: 5px 15px;
     margin: 0 2px;
     font-weight: 600;
     -webkit-transition: all .5s;
@@ -446,7 +466,7 @@ sup {
     position: relative;
     border-radius: 2px; }
     .header__nav > a > sup {
-      top: -10px;
+      top: 5px;
       left: -5px; }
   .header__nav > a:hover {
     background-color: #f8f8ff;
@@ -471,8 +491,7 @@ sup {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 45px;
-  margin-right: 10px; }
+  height: 45px; }
   .header__right > div {
     font-weight: 600; }
 
@@ -2123,7 +2142,7 @@ sup {
   .mainWrapper, .mainWrapper-ticket, .mainWrapper-ticket, .mainWrapper-ticket {
     margin-top: 80px;
     padding-top: 20px; }
-  .header {
+  .header__wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -2131,7 +2150,7 @@ sup {
   .header__info {
     width: 100%; }
   .header__right {
-    width: 35%; }
+    width: auto; }
   .header__user {
     margin-right: 20px; }
   .list__controlBtnHolder {
@@ -2231,7 +2250,7 @@ sup {
   [class*="col-"] {
     padding-right: 10px;
     padding-left: 10px; }
-  .header {
+  .header__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -2241,7 +2260,7 @@ sup {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .header > div {
+    .header__wrapper > div {
       width: 100%;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;

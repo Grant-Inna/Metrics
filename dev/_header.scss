@@ -4,12 +4,16 @@
   width: 100%;
   min-height: 60px;
   background-color: #fff;
+  @include columnFlex();
+}
+.header__wrapper {
   @include rowFlex( $j-c: space-between );
+  padding: 0;
 }
 .header__info {
   height: 50px !important;
   width: 180px;
-  margin: 1% 0 1% 15px;
+  margin: 1% 0;
   padding: 0;
   @include rowFlex();
 }
@@ -50,12 +54,13 @@
 
 .header__nav {
   @include rowFlex( $j-c: space-between );
+  height: 60px;
   > a {
     width: auto;
     cursor: pointer;
     color: #333;
-    height: 30px;
-    padding: 10px 15px;
+    height: 100%;
+    padding: 5px 15px;
     margin: 0 2px;
     font-weight: 600;
     @include transition;
@@ -63,7 +68,7 @@
     position: relative;
     border-radius: 2px;
     > sup {
-      top: -10px;
+      top: 5px;
       left: -5px;
     }
   }
@@ -78,7 +83,6 @@
 .header__right {
   @include rowFlex( $j-c: space-between );
   height: 45px;
-  margin-right: 10px;
   > div {
     font-weight: 600;
   }
